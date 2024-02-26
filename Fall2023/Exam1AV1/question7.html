@@ -2,8 +2,9 @@
 <!-- Problem Statement and image-->
 <pl-question-panel>
     <h2>
-        A distributed load is applied to the beam as shown. Determine the reactions
-         at the <strong>fixed support</strong>.
+        A distributed load of ${{params.q}} \rm\ N/m$ is applied to the beam as shown. Determine the reactions
+         at the <strong>fixed support</strong> if the length of the distributed load is 
+         ${{params.L}}\rm\ m$.
     </h2>
     <p></p>
     <pl-figure file-name="IM1_2m_ss24_0005.png" directory="clientFilesQuestion"></pl-figure>
@@ -14,8 +15,11 @@
 <p></p>
 
 <!-- Number inputs for R_BX, R_BY, M_B -->
-<pl-number-input answer-name="" label="$R_{BX}"></pl-number-input>
-<pl-number-input answer-name="" label="$R_{BY}"></pl-number-input>
-<pl-number-input answer-name="" label="$M_B"></pl-number-input>
+<pl-number-input answers-name="R_BX" label="$R_{BX}$"
+    suffix="$N$"></pl-number-input>
+<pl-number-input answers-name="R_BY" label="$R_{BY}$"
+    suffix="$N$"></pl-number-input>
+<pl-number-input answers-name="M_B" label="$M_B$"
+    suffix="$Nm$"></pl-number-input>
 
 <!-- Possibility to add FBD/parameterization to problem -->
