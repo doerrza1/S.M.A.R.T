@@ -11,6 +11,42 @@
     <p></p>
 
     <h4>
+        A FBD is required.
+    </h4>
+
+    <p>
+        <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+            width="550" height="300">
+            <!-- FBD Answer -->
+            <pl-drawing-answer draw-error-box="true">
+                <!-- Point A vector -->
+                <pl-vector x1="75" y1="150" angle="180"></pl-vector> 
+                <!-- Point B vector -->
+                <pl-vector x1="200" y1="150" angle="180"></pl-vector>
+                <!-- Point C vector -->
+                <pl-vector x1="450" y1="150" angle="0"></pl-vector>
+            </pl-drawing-answer>
+    
+            <!-- Initial Drawing State -->
+            <pl-drawing-initial>
+                <pl-rod x1="75" y1="150" x2="450" y2="150" width="20" label1="A" offsetx1="-15" offsety1="15"
+                    label2="C" offsetx2="-15" offsety2="15"></pl-rod>
+                <pl-point x1="200" y1="150" label="B" offsetx="-10" offsety="20"></pl-point>
+            </pl-drawing-initial>
+    
+            <!-- Controls for FBD drawing -->
+            <pl-controls>
+                <pl-controls-group>
+                    <pl-drawing-button type="pl-vector"></pl-drawing-button>
+                </pl-controls-group>
+                <pl-controls-group>
+                    <pl-drawing-button type="delete"></pl-drawing-button>
+                </pl-controls-group>
+            </pl-controls>
+        </pl-drawing>
+    </p>
+
+    <h4>
         Determine the normal stress at point g.
     </h4>
 </pl-question-panel>
