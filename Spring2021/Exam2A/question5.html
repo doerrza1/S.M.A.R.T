@@ -10,9 +10,47 @@
     <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
     <p></p>
     
-    <h2>
+    <h4>
+        A FBD is required.
+    </h4>
+
+    <p>
+        <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+            width="300" height="550">
+            <!-- FBD Answer -->
+            <pl-drawing-answer draw-error-box="true">
+                <!-- Point F vector -->
+                <pl-vector x1="150" y1="75" angle="180"></pl-vector> 
+                
+                <!-- Cut vectors -->
+                <pl-vector x1="150" y1="475" angle="0"></pl-vector>
+                <pl-vector x1="150" y1="475" angle="90"></pl-vector>
+                <pl-arc-vector x1="150" y1="475" draw-center="false" clock-wise-direction="false"></pl-arc-vector>
+            </pl-drawing-answer>
+    
+            <!-- Initial Drawing State -->
+            <pl-drawing-initial>
+                <pl-rod x1="150" y1="75" x2="150" y2="475" width="20" label1="F" offsetx1="-50" offsety1="-10"
+                    label2="Cut" offsetx2="-75" offsety2="-10"></pl-rod>
+            </pl-drawing-initial>
+    
+            <!-- Controls for FBD drawing -->
+            <pl-controls>
+                <pl-controls-group>
+                    <pl-drawing-button type="pl-vector"></pl-drawing-button>
+                    <pl-drawing-button type="pl-arc-vector-CW"></pl-drawing-button>
+                    <pl-drawing-button type="pl-arc-vector-CCW"></pl-drawing-button>
+                </pl-controls-group>
+                <pl-controls-group>
+                    <pl-drawing-button type="delete"></pl-drawing-button>
+                </pl-controls-group>
+            </pl-controls>
+        </pl-drawing>
+    </p>
+
+    <h4>
         Determine the shear stress at point g. Point g is on the side of the water tower facing you.
-    </h2>
+    </h4>
 </pl-question-panel>
 
 <pl-number-input answers-name="" label="$&#964;_{xy}$" suffix="$kPa$"></pl-number-input>

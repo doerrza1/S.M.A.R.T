@@ -11,6 +11,52 @@
     <p></p>
     <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
     <p></p>
+
+    <h4>
+        Your work must be supported by a FBD.
+    </h4>
+
+    <p>
+        <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+            width="550" height="450">
+            <!-- FBD Answer -->
+            <pl-drawing-answer draw-error-box="true">
+                <!-- Cut Vectors -->
+                <pl-vector x1="175" y1="305" angle="0"></pl-vector>
+                <pl-double-headed-vector x1="175" y1="305" angle="0"></pl-double-headed-vector>
+                <pl-vector x1="175" y1="305" angle="90"></pl-vector>
+                <pl-double-headed-vector x1="175" y1="305" angle="90"></pl-double-headed-vector>
+                <pl-vector x1="175" y1="305" angle="135"></pl-vector>
+                <pl-double-headed-vector x1="175" y1="305" angle="135"></pl-double-headed-vector>
+
+
+                <!-- Point E vectors -->
+                <pl-vector x1="300" y1="225" angle="0"></pl-vector>
+                <pl-vector x1="300" y1="225" angle="270"></pl-vector>
+                <pl-vector x1="300" y1="225" angle="135"></pl-vector>
+
+            </pl-drawing-answer>
+    
+            <!-- Initial Drawing State -->
+            <pl-drawing-initial>
+                <pl-4pointrod x1="175" y1="75" x2="175" y2="225" x3="300" y3="225" 
+                x4="175" y4="305" width="20" label1="D" offsetx1="15" offsety1="-10"
+                    label2="C" offsetx2="-35" offsety2="-10" label3="E" offsetx3="10" offsety3="-35"
+                    label4="Cut" offsetx4="-75" offsety4="-10"></pl-4pointrod> 
+            </pl-drawing-initial>
+    
+            <!-- Controls for FBD drawing -->
+            <pl-controls>
+                <pl-controls-group>
+                    <pl-drawing-button type="pl-vector"></pl-drawing-button>
+                    <pl-drawing-button type="pl-double-headed-vector"></pl-drawing-button>
+                </pl-controls-group>
+                <pl-controls-group>
+                    <pl-drawing-button type="delete"></pl-drawing-button>
+                </pl-controls-group>
+            </pl-controls>
+        </pl-drawing>
+    </p>
     
 </pl-question-panel>
 
