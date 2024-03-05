@@ -19,6 +19,7 @@
     <p>
         <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
             width="550" height="450">
+            
             <!-- FBD Answer -->
             <pl-drawing-answer draw-error-box="true">
                 <!-- Cut Vectors -->
@@ -70,12 +71,12 @@
 
 <p></p>
 
-<pl-number-input answers-name="" label="$f_x$" suffix="$kip$"></pl-number-input>
-<pl-number-input answers-name="" label="$f_y$" suffix="$kip$"></pl-number-input>
-<pl-number-input answers-name="" label="$f_z$" suffix="$kip$"></pl-number-input>
-<pl-number-input answers-name="" label="$m_x$" suffix="$kip \cdot m$"></pl-number-input>
-<pl-number-input answers-name="" label="$m_y$" suffix="$kip \cdot m$"></pl-number-input>
-<pl-number-input answers-name="" label="$m_z$" suffix="$kip \cdot m$"></pl-number-input>
+<pl-number-input answers-name="" label="$f_x$" suffix="$kip$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$f_y$" suffix="$kip$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$f_z$" suffix="$kip$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$m_x$" suffix="$kip \cdot m$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$m_y$" suffix="$kip \cdot m$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$m_z$" suffix="$kip \cdot m$" rtol="2e-2"></pl-number-input>
 
 <!-- Part 2 3D stress state -->
 
@@ -87,10 +88,10 @@
 
 <p></p>
 
-<pl-number-input answers-name="" label="$\sigma_x$" suffix="$ksi$"></pl-number-input>
-<pl-number-input answers-name="" label="$\sigma_y$" suffix="$ksi$"></pl-number-input>
-<pl-number-input answers-name="" label="$\sigma_z$" suffix="$ksi$"></pl-number-input>
-<pl-number-input answers-name="" label="$&#964;_{xy}$" suffix="$ksi$"></pl-number-input>
-<pl-number-input answers-name="" label="$&#964;_{xz}$" suffix="$ksi$"></pl-number-input>
-<pl-number-input answers-name="" label="$&#964;_{yz}$" suffix="$ksi$"></pl-number-input>
+<pl-number-input answers-name="" label="$\sigma_x$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$\sigma_y$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$\sigma_z$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$&#964;_{xy}$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$&#964;_{xz}$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="" label="$&#964;_{yz}$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
 
