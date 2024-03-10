@@ -134,4 +134,46 @@
 <p></p>
 
 <!-- Possibility to add Part C FBD with addition of Python file-->
+<p>
+    <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+        width="550" height="360">
+        <!-- FBD Answer -->
+        <pl-drawing-answer draw-error-box="true">
+            <!-- Point A vectors -->
+            <pl-vector x1="275" y1="125" angle="0"></pl-vector>
+            <pl-vector x1="275" y1="125" angle="270"></pl-vector> 
+            <!-- Point B vector -->
+            <pl-vector x1="75" y1="175" angle="0"></pl-vector>
+            <pl-vector x1="75" y1="175" angle="270"></pl-vector>
+            <!-- Point C vector -->
+            <pl-vector x1="75" y1="250" angle="180"></pl-vector>
+            <!-- Point E vector -->
+            <pl-vector x1="300" y1="250" angle="270" disregard-sense="true"></pl-vector>
+            <!-- Point F vector -->
+            <pl-vector x1="450" y1="250" angle="270" disregard-sense="true"></pl-vector>
+            <pl-vector x1="450" y1="250" angle="0" disregard-sense="true"></pl-vector>
+            <pl-arc-vector x1="450" y1="250" clockwise-direction="false"></pl-arc-vector>
+        </pl-drawing-answer>
 
+        <!-- Initial Drawing State -->
+        <pl-drawing-initial>
+            <pl-rod x1="75" y1="250" x2="450" y2="250" label1="C" offsetx1="-20" offsety1="20"
+                label2="F" offsetx2="-20" offsety2="20"></pl-rod>
+            <pl-rod x1="175" y1="250" x2="275" y2="125" label1="D" offsetx1="-20" offsety1="-20"
+                label2="A" offsetx2="-40" offsety2="-20"></pl-rod>
+            <pl-rod x1="175" y1="250" x2="75" y2="175" label2="B" offsetx2="-20" offsety2="20"></pl-rod>
+            <pl-point x1="300" y1="250" label="E" offsetx="-10" offsety="20"></pl-point>
+        </pl-drawing-initial>
+
+        <!-- Controls for FBD drawing -->
+        <pl-controls>
+            <pl-controls-group>
+                <pl-drawing-button type="pl-vector"></pl-drawing-button>
+                <pl-drawing-button type="pl-arc-vector-CCW"></pl-drawing-button>
+            </pl-controls-group>
+            <pl-controls-group>
+                <pl-drawing-button type="delete"></pl-drawing-button>
+            </pl-controls-group>
+        </pl-controls>
+    </pl-drawing>
+</p>
