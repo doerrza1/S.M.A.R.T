@@ -156,4 +156,36 @@
 <p></p>
 
 <!-- Possibility to add Part D FBD with addition of Python file-->
+<p>
+    <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+        width="550" height="300">
+        <!-- FBD Answer -->
+        <pl-drawing-answer draw-error-box="true">
+            <!-- Point C vectors -->
+            <pl-vector x1="75" y1="225" angle="270" disregard-sense="true"></pl-vector> 
+            <!-- Point D vector -->
+            <pl-vector x1="175" y1="225" angle="315"></pl-vector>
+            <!-- Point E vectors -->
+            <pl-vector x1="450" y1="225" angle="90" disregard-sense="true"></pl-vector>
+            <pl-vector x1="450" y1="225" angle="45"></pl-vector>
 
+        </pl-drawing-answer>
+
+        <!-- Initial Drawing State -->
+        <pl-drawing-initial>
+            <pl-rod x1="75" y1="225" x2="450" y2="225" width="20" label1="C" offsetx1="-15" offsety1="15"
+                label2="E" offsetx2="-15" offsety2="15"></pl-rod>
+            <pl-point x1="263" y1="225" label="D" offsetx="-10" offsety="20"></pl-point>
+        </pl-drawing-initial>
+
+        <!-- Controls for FBD drawing -->
+        <pl-controls>
+            <pl-controls-group>
+                <pl-drawing-button type="pl-vector"></pl-drawing-button>
+            </pl-controls-group>
+            <pl-controls-group>
+                <pl-drawing-button type="delete"></pl-drawing-button>
+            </pl-controls-group>
+        </pl-controls>
+    </pl-drawing>
+</p>
