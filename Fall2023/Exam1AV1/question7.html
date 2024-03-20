@@ -15,11 +15,14 @@
 <p></p>
 
 <!-- Number inputs for R_BX, R_BY, M_B -->
-<pl-number-input answers-name="R_BX" label="$R_{BX}$"
-    suffix="$N$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="R_BY" label="$R_{BY}$"
-    suffix="$N$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="M_B" label="$M_B$"
-    suffix="$Nm$" rtol="2e-2"></pl-number-input>
+<pl-number-input answers-name="BX" label="$R_{BX}$"
+    correct-answer="{{correct_answers.R_BX}} {{correct_answers.unitsR}}" 
+    atol="1 {{correct_answers.unitsR}}"></pl-number-input>
+
+<pl-number-input answers-name="BY" label="$R_{BY}$"
+    correct-answer="{{correct_answers.R_BY}} {{correct_answers.unitsR}}" rtol="2e-2"></pl-number-input>
+
+<pl-number-input answers-name="MB" label="$M_B$"
+    correct-answer="{{correct_answers.M_B}} {{correct_answers.unitsM}}" rtol="2e-2"></pl-number-input>
 
 <!-- Possibility to add FBD/parameterization to problem -->

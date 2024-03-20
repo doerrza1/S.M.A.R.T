@@ -6,20 +6,23 @@
         The cable (CE) has been tightened until the tension in the cable is 
         ${{params.F}}\rm\ kN$. 
     </h2>
-    <h2>  
+    
+    <p></p>
+    <pl-figure file-name="IM1_1m_ss24_0019.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+
+    <h4>  
         Find the moment about the origin (Point A), 
         caused by the cable force applied at point C.
-    </h2>
-
-    <p></p>
-    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
-    <p></p>
-
+    </h4>
 </pl-question-panel>
 
-<pl-number-input answers-name="M_Ai" label="$M_A$ i&#770;" 
-    suffix="$ \rm Nm$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="M_Aj" label="$M_A$ j&#770;"
-    suffix="$ \rm Nm$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="M_Ak" label="$M_A$ k&#770;"
-    suffix="$ \rm Nm$" rtol="2e-2"></pl-number-input>
+<p></p>
+<p></p>
+
+<pl-units-input answers-name="i" label="$M_A$ i&#770;" 
+    correct-answer="{{correct_answers.M_Ai}} {{correct_answers.units}}" rtol="2e-2"></pl-units-input>
+<pl-units-input answers-name="j" label="$M_A$ j&#770;"
+    correct-answer="{{correct_answers.M_Aj}} {{correct_answers.units}}" rtol="2e-2"></pl-units-input>
+<pl-units-input answers-name="k" label="$M_A$ k&#770;"
+    correct-answer="{{correct_answers.M_Ak}} {{correct_answers.units}}" rtol="2e-2"></pl-units-input>
