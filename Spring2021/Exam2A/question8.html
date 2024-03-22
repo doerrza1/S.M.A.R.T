@@ -71,12 +71,24 @@
 
 <p></p>
 
-<pl-number-input answers-name="" label="$f_x$" suffix="$kip$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$f_y$" suffix="$kip$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$f_z$" suffix="$kip$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$m_x$" suffix="$kip \cdot m$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$m_y$" suffix="$kip \cdot m$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$m_z$" suffix="$kip \cdot m$" rtol="2e-2"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="fx" label="$f_x$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="fy" label="$f_y$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="fz" label="$f_z$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="mx" label="$m_x$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="my" label="$m_y$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="mz" label="$m_z$" rtol="2e-2" placeholder=""></pl-units-input>
+
 
 <!-- Part 2 3D stress state -->
 
@@ -88,10 +100,22 @@
 
 <p></p>
 
-<pl-number-input answers-name="" label="$\sigma_x$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$\sigma_y$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$\sigma_z$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$&#964;_{xy}$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$&#964;_{xz}$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$&#964;_{yz}$" suffix="$ksi$" rtol="2e-2"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="sigmax" label="$\sigma_x$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="sigmay" label="$\sigma_y$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="sigmaz" label="$\sigma_z$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="shearxy" label="$&#964;_{xy}$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="shearxz" label="$&#964;_{xz}$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="shearyz" label="$&#964;_{yz}$" rtol="2e-2" placeholder=""></pl-units-input>
+
 

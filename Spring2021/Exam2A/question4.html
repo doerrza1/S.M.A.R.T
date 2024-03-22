@@ -19,7 +19,9 @@
     </h4>
 </pl-question-panel>
 
-<pl-number-input answers-name="" label="$A$" suffix="$in^2$" rtol="2e-2"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="a" label="$A$" rtol="2e-2" placeholder=""></pl-units-input>
+
 
 <p></p>
 
@@ -30,7 +32,9 @@
     </h4>
 </pl-question-panel>
 
-<pl-number-input answers-name="" label="$I_y$" suffix="$in^4"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="iy" label="$I_y$" rtol="2e-2" placeholder=""></pl-units-input>
+
 
 <p></p>
 
@@ -41,7 +45,9 @@
     </h4>
 </pl-question-panel>
 
-<pl-number-input answers-name="" label="$I_z$" suffix="$in^4$"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="iz" label="$I_z$" rtol="2e-2" placeholder=""></pl-units-input>
+
 
 <p></p>
 
@@ -52,8 +58,12 @@
     </h4>
 </pl-question-panel>
 
-<pl-number-input answers-name="" label="$b_y$" suffix="in"></pl-number-input>
-<pl-number-input answers-name="" label="$b_z$" suffix="in"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="by" label="$b_y$" rtol="2e-2" placeholder=""></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="bz" label="$b_z$" rtol="2e-2" placeholder=""></pl-units-input>
+
 
 <!-- Part E First moment of area about z-axis -->
 <pl-question-panel>
@@ -62,5 +72,7 @@
     </h4>
 </pl-question-panel>
 
-<pl-number-input answers-name="" label="$Q_z$" suffix="$in^3$"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="qz" label="$Q_z$" rtol="2e-2" placeholder=""></pl-units-input>
+
 

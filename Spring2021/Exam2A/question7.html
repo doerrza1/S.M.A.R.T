@@ -59,6 +59,12 @@
 
 </pl-question-panel>
 
-<pl-number-input answers-name="" label="$\sigma_{x}$" suffix="ksi" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$&#964;_{xy}$" suffix="ksi" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$\sigma_{y}$" suffix="ksi" atol="1"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="sigmax" label="$\sigma_{x}$" rtol="2e-2"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="shear" label="$&#964;_{xy}$" rtol="2e-2"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="sigmay" label="$\sigma_{y}$" atol="1 {{correct_answers.units}}"></pl-units-input>
+

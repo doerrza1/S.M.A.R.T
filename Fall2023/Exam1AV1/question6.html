@@ -14,11 +14,11 @@
 <p></p>
 
 <!-- Number inputs for R_AX, R_AY, R_BX, R_BY -->
-<pl-number-input answers-name="R_AX" label="$R_{AX}$"
-    suffix="$N$" atol="1"></pl-number-input>
-<pl-number-input answers-name="R_AY" label="$R_{AY}$"
-    suffix="$N$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="R_BY" label="$R_{BY}$"
-    suffix="$N$" rtol="2e-2"></pl-number-input>
+<pl-units-input answers-name="AX" label="$R_{AX}$"
+    correct-answer="{{correct_answers.R_AX}} N" atol="1 N"></pl-units-input>
+<pl-units-input answers-name="AY" label="$R_{AY}$"
+    correct-answer="{{correct_answers.R_AY}} N" rtol="2e-2"></pl-units-input>
+<pl-units-input answers-name="BY" label="$R_{BY}$"
+    correct-answer="{{correct_answers.R_BY}} N" rtol="2e-2"></pl-units-input>
 
 <!-- Possibility to add FBD/parameterization to problem -->

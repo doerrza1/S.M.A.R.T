@@ -4,7 +4,7 @@
 <pl-question-panel>
     <h2>Find the moment about point A caused by the applied forces.</h2>
     <p></p>
-    <pl-figure file-name="IM1_1m_ss24_0002.png" directory="clientFilesQuestion"></pl-figure>
+    <pl-figure file-name="fig.png" directory="clientFilesQuestion"></pl-figure>
     <p></p>
 </pl-question-panel>
 
@@ -12,14 +12,24 @@
 <p></p>
 
 <!-- Entry for moment calculation -->
-<pl-number-input answers-name="" label="$M_A$" rtol="2e-2"></pl-number-input>
+<pl-units-input answers-name="MA" 
+correct-answer="{{correct_answers.Moment_A}} {{correct_answers.units}}" 
+label="$M_A$" rtol="2e-2"></pl-units-input>
+
+<p></p>
+<p></p>
 
 <!-- Checkbox for equilibrium -->
 <pl-question-panel>
-    <h2>Is the system in equilibrium?</h2>
+    <h4>Is the system in equilibrium?</h4>
 </pl-question-panel>
 
-<pl-checkbox answers-name="equil" weight="1" fixed-order="true">
-    <pl-answer>Yes, the system is in equilibrium.</pl-answer>
-    <pl-answer>No, there is a moment present.</pl-answer>
-</pl-checkbox>
+<p></p>
+<p></p>
+
+<pl-string-input answers-name="Equillibrium" label="T/F"></pl-string-input>
+
+<p></p>
+<p></p>
+
+<p>Enter either <strong>True</strong> or <strong>False</strong>.</p>

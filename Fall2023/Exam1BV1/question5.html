@@ -16,8 +16,13 @@
 <p></p>
 
 <!-- Number answer inputs for R_AX, R_AY, M_A-->
-<pl-number-input answers-name="" label="$R_{AX}$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$R_{AY}$" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="" label="$M_A$" rtol="2e-2"></pl-number-input>
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}" 
+answers-name="AX" label="$R_{AX}$" rtol="2e-2"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="AY" label="$R_{AY}$" rtol="2e-2"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.}}"
+answers-name="MA" label="$M_A$" rtol="2e-2"></pl-units-input>
 
 <!-- Possibility to add FBD/parameterization to problem -->
