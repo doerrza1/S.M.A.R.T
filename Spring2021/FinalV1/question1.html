@@ -1,0 +1,120 @@
+<!-- Spring 2021 Final Exam V1 Problem 1 -->
+<pl-question-panel>
+    <p>
+        <h2>
+            For the system shown below:
+        </h2>
+    </p>
+
+    <p></p>
+    <pl-figure file-name="IMF_1e_ss24_8096.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+
+</pl-question-panel>
+
+<!-- Part A Known Boundary Conditions -->
+<pl-question-panel>
+    <p>
+        <h4>
+            (A) Indicate the known boundary conditions at each of the following points:
+        </h4>
+    </p>
+</pl-question-panel>
+
+<pl-question-panel>
+    <p>
+        <h4>
+            Point A:
+        </h4>
+    </p>
+</pl-question-panel>
+
+<pl-checkbox answers-name="pointa" weight="1" fixed-order="true">
+    <pl-answer correct="true">$u_X$</pl-answer>
+    <pl-answer correct="true">$u_Y$</pl-answer>
+    <pl-answer>$\theta_Z$</pl-answer>
+    <pl-answer>$R_{AX}$</pl-answer>
+    <pl-answer>$R_{AY}$</pl-answer>
+    <pl-answer correct="true">$M_A$</pl-answer>
+</pl-checkbox>
+
+<p></p>
+<p></p>
+
+<pl-question-panel>
+    <p>
+        <h4>
+            Point E:
+        </h4>
+    </p>
+</pl-question-panel>
+
+<pl-checkbox answers-name="pointe" weight="1" fixed-order="true">
+    <pl-answer correct="true">$u_X$</pl-answer>
+    <pl-answer correct="true">$u_Y$</pl-answer>
+    <pl-answer correct="true">$\theta_Z$</pl-answer>
+    <pl-answer>$R_{AX}$</pl-answer>
+    <pl-answer>$R_{AY}$</pl-answer>
+    <pl-answer>$M_A$</pl-answer>
+</pl-checkbox>
+
+<!-- Part B Two Force Members -->
+<pl-question-panel>
+    <p>
+        <h4>
+            (B) Select any two force members.
+        </h4>
+    </p>
+</pl-question-panel>
+
+<pl-checkbox answers-name="2force" weight="1" fixed-order="true">
+    <pl-answer></pl-answer>
+</pl-checkbox>
+
+<!-- Part C FBD -->
+<pl-question-panel>
+    <p>
+        <h4>
+            (C) Draw a free body diagram for the system.
+        </h4>
+    </p>
+</pl-question-panel>
+
+<p>
+    <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+        width="550" height="300">
+        <!-- FBD Answer -->
+        <pl-drawing-answer draw-error-box="true">
+            <!-- Point A vectors -->
+            <pl-vector x1="175" y1="125" angle="0" disregard-sense="true"></pl-vector>
+            <pl-vector x1="175" y1="125" angle="270"></pl-vector>
+            <!-- Point B vectors -->
+            <pl-vector x1="325" y1="225" angle="225"></pl-vector>
+            <!-- Point C vectors -->
+            <pl-vector x1="450" y1="225" angle="90" disregard-sense="true"></pl-vector> 
+            <!-- Point E vectors -->
+            <pl-vector x1="75" y1="225" angle="270" disregard-sense="true"></pl-vector>
+            <pl-vector x1="75" y1="225" angle="0" disregard-sense="true"></pl-vector>
+            <pl-arc-vector x1="75" y1="225" clockwise-direction="false"></pl-arc-vector>
+
+        </pl-drawing-answer>
+
+        <!-- Initial Drawing State -->
+        <pl-drawing-initial>
+            <pl-rod x1="75" y1="225" x2="450" y2="225" width="20" label1="E" offsetx1="-15" offsety1="15"
+                label2="C" offsetx2="-15" offsety2="15"></pl-rod>
+            <pl-rod x1="175" y1="125" x2="175" y2="225" width="20" label1="A" offsetx1="-15" offsety1="15"></pl-rod>
+            <pl-point x1="325" y1="225" label="B" offsetx="-10" offsety="20"></pl-point>
+        </pl-drawing-initial>
+
+        <!-- Controls for FBD drawing -->
+        <pl-controls>
+            <pl-controls-group>
+                <pl-drawing-button type="pl-vector"></pl-drawing-button>
+            </pl-controls-group>
+            <pl-controls-group>
+                <pl-drawing-button type="delete"></pl-drawing-button>
+            </pl-controls-group>
+        </pl-controls>
+    </pl-drawing>
+</p>
