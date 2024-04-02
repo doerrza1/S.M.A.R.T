@@ -18,8 +18,8 @@
 </pl-question-panel>
 
 <p></p>
-<pl-number-input answers-name="" label="$y*$"
-    suffix="$cm$" rtol="2e-2"></pl-number-input>
+<pl-units-input answers-name="Y" label="$y*$"
+    correct-answer="{{correct_answers.y}} {{correct_answers.units_a}}" rtol="2e-2"></pl-units-input>
 <p></p>
 
 <!-- Part B Moment of Inertia -->
@@ -28,8 +28,8 @@
 </pl-question-panel>
 
 <p></p>
-<pl-number-input answers-name="" label="$I_ZZ$"
-    suffix="$cm^4$" rtol="2e-2"></pl-number-input>
+<pl-units-input answers-name="Izz" label="$I_ZZ$"
+    correct-answer="{{correct_answers.I_zz}} {{correct_answers.units_b}}" rtol="2e-2"></pl-units-input>
 <p></p>
 
 <!-- Part C Q_Z(y) -->
@@ -38,6 +38,6 @@
 </pl-question-panel>
 
 <p></p>
-<pl-number-input answers-name="" label="$Q_Z (y)$"
-    suffix="$cm^3$" rtol="2e-2"></pl-number-input>
+<pl-units-input answers-name="Qz" label="$Q_Z (y)$"
+    correct-answer="{{correct_answers.Q_z(y)}} {{correct_answers.units_c}}" rtol="2e-2"></pl-units-input>
 <p></p>

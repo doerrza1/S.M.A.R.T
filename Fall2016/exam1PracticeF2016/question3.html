@@ -13,10 +13,10 @@
 </pl-question-panel>
 
 <p>
-    <pl-number-input answers-name="" label="$M_A$ i&#770;"
-        suffix="$\rm Nm$" rtol="2e-2"></pl-number-input>
-    <pl-number-input answers-name="" label="$M_A$ j&#770;"
-        suffix="$\rm Nm$" rtol="2e-2"></pl-number-input>
-    <pl-number-input answers-name="" label="$M_A$ k&#770;"
-        suffix="$\rm Nm$" rtol="2e-2"></pl-number-input>
+    <pl-units-input answers-name="mI" correct-answer="{{correct_answers.M_Ai}} {{correct_answers.units}}" label="$M_A$ i&#770;"
+         rtol="2e-2"></pl-units-input>
+    <pl-units-input answers-name="mJ" correct-answer="{{correct_answers.M_Aj}} {{correct_answers.units}}" label="$M_A$ j&#770;"
+         rtol="2e-2"></pl-units-input>
+    <pl-units-input answers-name="mK" correct-answer="{{correct_answers.M_Ak}} {{correct_answers.units}}" label="$M_A$ k&#770;"
+         rtol="2e-2"></pl-units-input>
 </p>

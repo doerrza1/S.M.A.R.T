@@ -13,8 +13,25 @@
 
 </pl-question-panel>
 
-<p> <!-- gotta figure this out -->
-    <pl-numbers-input answers-name="" label="$M_B$ $&#964;_{xz}$" rtol="2e-2"></pl-numbers-input>
-    <pl-numbers-input answers-name="" label="$M_C$ $&#964;_{xz}$" rtol="2e-2"></pl-numbers-input>
 
-</p>
+<!-- Point B -->
+
+<pl-question-panel>
+    <h4>
+        Point B:
+    </h4>
+</pl-question-panel>
+
+<pl-units-input answers-name="tb" correct-answer="{{correct_answers.tau_xz1}} {{correct_answers.units_tau}}" 
+    label="$\tau_{xz}$" rtol="2e-2"></pl-units-input>
+
+<!-- Point C -->
+<pl-question-panel>
+    <h4>
+        Point C:
+    </h4>
+</pl-question-panel>
+
+<pl-units-input answers-name="tc" correct-answer="{{correct_answers.tau_xz2}} {{correct_answers.units_tau}}" 
+    label="$\tau_{xz}$" rtol="2e-2"></pl-units-input>
+
