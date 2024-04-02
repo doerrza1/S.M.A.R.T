@@ -14,12 +14,17 @@
     <pl-figure file-name="IM1_1e_ss24_0023.png" directory="clientFilesQuestion"></pl-figure>
     <p></p>
     
-    <p>
+    <h4>
         (Note: Point A is <strong>NOT</strong> at the origin)
-    </p>
+    </h4>
 
 </pl-question-panel>
 
-<pl-number-input answers-name="M_Ai" label="$M_A$ i&#770;" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="M_Aj" label="$M_A$ j&#770;" rtol="2e-2"></pl-number-input>
-<pl-number-input answers-name="M_Ak" label="$M_A$ k&#770;" rtol="2e-2"></pl-number-input>
+<pl-units-input answers-name="M_Ai" correct-answer="{{correct_answers.mi}} {{correct_answers.units}}" 
+    label="$M_A$ i&#770;" rtol="2e-2" placeholder="Must Include Units"></pl-units-input>
+
+<pl-units-input answers-name="M_Aj" correct-answer="{{correct_answers.mj}} {{correct_answers.units}}" 
+    label="$M_A$ j&#770;" rtol="2e-2" placeholder="Must Include Units"></pl-units-input>
+
+<pl-units-input answers-name="M_Ak" correct-answer="{{correct_answers.mk}} {{correct_answers.units}}" 
+    label="$M_A$ k&#770;" rtol="2e-2" placeholder="Must Include Units"></pl-units-input>

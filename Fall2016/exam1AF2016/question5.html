@@ -1,0 +1,24 @@
+<!-- Fall 2016 Exam 1A Problem 5 -->
+
+<pl-question-panel>
+    <h2>
+        A rectangular beam is loaded with a vertical force of P = ${{params.F}} \rm\kips$ downward.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IM1_2e_ss24_0040.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<pl-question-panel>
+    <h4>
+        Find the shear stress at the top (A) and at the $3/4$ mark (B).
+    </h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.Atau}} {{correct_answers.units}}" answers-name="pointA"
+    label="$\tau_{xy}$" placeholder="Point A" atol="1 ksi"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.Btau}} {{correct_answers.units}}" answers-name="pointB"
+    label="$\tau_{xy}$" placeholder="Point B" rtol="2e-2"></pl-units-input>

@@ -8,7 +8,7 @@
     </h2>
 
     <p></p>
-    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <pl-figure file-name="IM1_1m_ss24_8054.png" directory="clientFilesQuestion"></pl-figure>
     <p></p>
 
     <p>
@@ -28,3 +28,20 @@
     <pl-answer>$None$</pl-answer>
  
 </pl-checkbox>
+
+<pl-question-panel>
+    <h2>
+        As shown in the picture above, the ship crane carries a box weighing P = $600 kN$. Find the 
+        moment about D caused by the box.
+    </h2>
+
+    <p>
+        <h4>(<em>NOTE: we are just looking for a simple moment calculation, NOT an 
+            equilibrium calculation
+        </em>)</h4>
+    </p>
+
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.m}} {{correct_answers.units}}"
+answers-name="md" label="$M_D$" rtol="2e-2" placeholder="Include Units"></pl-units-input>
