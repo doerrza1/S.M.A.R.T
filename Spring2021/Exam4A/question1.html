@@ -1,0 +1,55 @@
+<!-- Spring 2021 Exam 4A Problem 1 -->
+<pl-question-panel>
+    <h2>
+        Gear B is loaded with a torque $T_B$ = ${{params.Tb}} \rm\Nm$ causing it to rotate through an angle 
+        of $\phi_B$ = ${{params.phi}} \rm\rad$.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IM4_1m_ss24_8084.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<p></p>
+<p></p>
+
+<pl-question-panel>
+    <h4>
+        (a) What torque on gear A is necessary to keep the system in equilibrium?
+    </h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.Ta}}{{correct_answers.unitsT}}" answers-name="torque"
+    label="$T_A$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+
+<pl-question-panel>
+    <h4>
+        Indicate if the torque is CW or CCW.
+    </h4>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="acc" weight="1">
+    <pl-answer correct="false">CW</pl-answer>
+    <pl-answer correct="true">CCW</pl-answer>
+  </pl-multiple-choice>
+
+  <pl-question-panel>
+    <h4>
+        (b) How far will gear A rotate?
+    </h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.phia}}{{correct_answers.unitsP}}" answers-name="angle"
+    label="$\phi_A$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+
+<pl-question-panel>
+     <h4>
+         Indicate if the rotation is CW or CCW.
+    </h4>
+</pl-question-panel>
+    
+<pl-multiple-choice answers-name="acc1" weight="1">
+    <pl-answer correct="true">CW</pl-answer>
+    <pl-answer correct="false">CCW</pl-answer>
+</pl-multiple-choice>

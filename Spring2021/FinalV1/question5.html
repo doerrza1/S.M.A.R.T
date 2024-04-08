@@ -1,0 +1,49 @@
+<!-- Spring 2021 Final V1 Problem 5 -->
+
+<pl-question-panel>
+    <h2>
+        A 5 ft (60 inches) steel column (shown) is supporting a 1000 lb load (P = 1000 lb). The column cross section is 
+        1in x 4in.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IMF_2e_ss24_8100.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<p></p>
+<p></p>
+
+<pl-question-panel>
+    <h4>
+        (a) Determine the factor of safety for the column in buckling.
+    </h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.fsa}}" answers-name="parta"
+    label="$F.S$" placeholder="" rtol="2e-2"></pl-units-input>
+
+<p></p>
+<p></p>
+
+<pl-question-panel>
+    <h4>
+        (b) Determine the factor of safety for the column if $\sigma_{yp}$ = 36 ksi. (Rankine Criteria)
+    </h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.fsb}}" answers-name="partb"
+    label="$F.S$" placeholder="" rtol="2e-2"></pl-units-input>
+
+<p></p>
+<p></p>
+
+<pl-question-panel>
+    <h4>
+        (c) Determine the factor of safety for the column if the maximum allowed deformation is $\delta_{max}$ = 0.01 inches.
+    </h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.fsc}}" answers-name="partc"
+    label="$F.S$" placeholder="" rtol="2e-2"></pl-units-input>

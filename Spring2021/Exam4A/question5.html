@@ -1,0 +1,72 @@
+<!-- Spring 2021 Exam 4A Problem 5 -->
+
+<pl-question-panel>
+    <h2>
+        A force of P = ${{params.P}} kN$ is applied to the center of Rod AB. Solve for the reactions at each wall. 
+        The rod is made of steel and has a constant cross-sectional area.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IM4_2m_ss24_8088.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<p></p>
+<p></p>
+
+<pl-question-panel>
+    <h4>
+        You must draw a proper FBD as part of the solution process.
+    </h4>
+</pl-question-panel>
+
+<p>
+    <pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+        width="550" height="300">
+        <!-- FBD Answer -->
+        <pl-drawing-answer draw-error-box="true">
+            <!-- Point A vectors -->
+            <pl-vector x1="75" y1="225" angle="0" disregard-sense="true"></pl-vector> 
+            <!-- Point C vector -->
+            <pl-vector x1="170" y1="225" angle="0" disregard-sense="true"></pl-vector>
+            <!-- Point B vectors -->
+            <pl-vector x1="450" y1="225" angle="0" disregard-sense="true"></pl-vector>
+            
+
+        </pl-drawing-answer>
+
+        <!-- Initial Drawing State -->
+        <pl-drawing-initial>
+            <pl-rod x1="75" y1="225" x2="450" y2="225" width="20" label1="A" offsetx1="-15" offsety1="15"
+                label2="B" offsetx2="-15" offsety2="15"></pl-rod>
+            <pl-point label="C" x1="263" y1=225 offsetx="-10" offsety="20"></pl-point>
+        </pl-drawing-initial>
+
+        <!-- Controls for FBD drawing -->
+        <pl-controls>
+            <pl-controls-group>
+                <pl-drawing-button type="pl-vector"></pl-drawing-button>
+            </pl-controls-group>
+            <pl-controls-group>
+                <pl-drawing-button type="delete"></pl-drawing-button>
+            </pl-controls-group>
+        </pl-controls>
+    </pl-drawing>
+</p>
+
+
+<p></p>
+<p></p>
+
+<pl-question-panel>
+    <h4>
+        Support Reactions:
+    </h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.Rax}} {{correct_answers.units}}" answers-name="pointa"
+    label="$R_{AX}$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.Rbx}} {{correct_answers.units}}" answers-name="pointb"
+    label="$R_{BX}$" placeholder="Include Units" rtol="2e-2"></pl-units-input>

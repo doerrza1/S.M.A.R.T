@@ -1,0 +1,28 @@
+<!-- Spring 2021 Exam 4B Problem 2 -->
+
+<pl-question-panel>
+    <h2>
+        A steel part is fitted with a strain gage shown. The strain gage read $\epsilon_1$ = ${{params.ep1}}$$\mu$, 
+        $\epsilon_2$ = ${{params.ep2}}$$\mu$, $\epsilon_3$ = ${{params.ep3}}$$\mu$.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IM4_1n_ss24_8091.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<pl-question-panel>
+    <h4>
+        What is the 2D state of strain at this point? (i.e find $\epsilon_X$, $\epsilon_Y$, and $\Upsilon_{XY}$)
+    </h4>
+</pl-question-panel>
+
+<pl-number-input correct-answer="{{correct_answers.epx}}" answers-name="X"
+    label="$\epsilon_X$" rtol="2e-2" suffix="$\mu$" placeholder=""></pl-number-input>
+
+<pl-number-input correct-answer="{{correct_answers.epy}}" answers-name="Y"
+    label="$\epsilon_Y$" rtol="2e-2" suffix="$\mu$" placeholder=""></pl-number-input>
+
+<pl-number-input correct-answer="{{correct_answers.tau}}" answers-name="XY"
+    label="$\Upsilon_{XY}$" rtol="2e-2" suffix="$\mu$" placeholder=""></pl-number-input>
