@@ -1,0 +1,32 @@
+<!-- Spring 2021 Final V1 Problem 4 -->
+
+<pl-question-panel>
+    <h2>
+        A small pressure vessel has an inner radius $r_i$ = 10mm and outer radius 
+        $r_o$ = 11mm. The pressure vessel is loaded with an internal pressure of P = 10 kPa
+        and a compressive load of F = 3kN.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IMF_2m_ss24_8099.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<pl-question-panel>
+    <h4>
+        Determine the stress state at point G using the provided l.c.s.
+    </h4>
+</pl-question-panel>
+
+<p></p>
+<p></p>
+
+<pl-units-input correct-answer="{{correct_answers.sigx}} {{correct_answers.units}}" answers-name="sigmax"
+    label="$\sigma_x$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.sigy}} {{correct_answers.units}}" answers-name="sigmay"
+    label="$\sigma_y$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+
+<pl-units-input correct-answer="{{correct_answers.tau}} {{correct_answers.units}}" answers-name="tauxy"
+    label="$\tau_{xy}$" placeholder="Include Units" atol="1 kPa"></pl-units-input>

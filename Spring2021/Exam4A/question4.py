@@ -3,4 +3,11 @@
 import random, math
 
 def generate(data):
-    # Given Values
+    # Answers
+
+    Kt = 1.75
+    sigma = 206.5
+
+    data['correct_answers']['Kt'] = Kt
+    data['correct_answers']['sigma'] = sigma
+    data['correct_answers']['units'] = 'ksi'

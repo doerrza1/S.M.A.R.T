@@ -1,0 +1,70 @@
+<!-- Spring 2021 Final Exam V1 Problem 2 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the statically indeterminate beam shown below:
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IMF_1e_ss24_8103(1).png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+
+    <h4>
+        (a) Solve for the reaction at point C.
+    </h4>
+    <h4>
+        (b) Compute the deflection of the beam, y(x), at the midpoint of the beam. (Let IE = 1)
+    </h4>
+    
+</pl-question-panel>
+
+<p></p>
+<p></p>
+
+<table>
+    <tr>
+        <th>
+            (a)
+        </th>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.Rcy}} {{correct_answers.unitsR}}" answers-name="reaction"
+                label="$R_{cy}$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            (b)
+        </th>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.yx}} {{correct_answers.unitsY}}" answers-name="deflection"
+                label="$y(x)$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

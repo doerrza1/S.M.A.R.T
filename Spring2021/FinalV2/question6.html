@@ -1,0 +1,75 @@
+<!-- Spring 2021 Final Exam V2 Problem 6 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A 5 ft (60 inches) steel column is supporting a 1000 lb load, (P=1000 lb).  The 
+            column cross section is a circle with a 1 inch radius.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="IMF_2e_ss24_8104.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>
+        (a) Determine the factor of safety for the column in buckling.
+    </h4>
+    <h4>
+        (b) Determine the factor of safety for the column if $\sigma_{yp}$ = 36 ksi.  (Rankine Criteria) 
+    </h4>
+    <h4>
+        (c) Determine the factor of safety for the column if the maximum allowed deformation is 
+            $\sigma_{max}$ = 0.01 inches
+    </h4>
+
+</pl-question-panel>
+
+<table>
+    <tr>
+        <th>(a)</th>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.buckle}}" answers-name="fs1"
+                label="$F.S$" rtol="2e-2"></pl-number-input>
+        </td>
+    </tr>
+    <tr>
+        <th>(b)</th>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.rankine}}" answers-name="fs2"
+                label="$F.S$" rtol="2e-2"></pl-number-input>
+        </td>
+    </tr>
+    <tr>
+        <th>(c)</th>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.deformation}}" answers-name="fs3"
+                label="$F.S$" rtol="2e-2"></pl-number-input>
+        </td>
+    </tr>
+</table>

@@ -4,4 +4,13 @@ import random, math
 
 def generate(data):
 
-    f = 1
+    # Answers
+
+    sigx = 4.5
+    sigy = 100
+    tau = 0
+
+    data['correct_answers']['sigx'] = sigx 
+    data['correct_answers']['sigy'] = sigy
+    data['correct_answers']['tau'] = tau
+    data['correct_answers']['units'] = 'kPa'
