@@ -1,0 +1,132 @@
+<!-- Fall 2021 Exam 1A Problem 3 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the structure shown below:
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Select the letter of the point (A,B,C, or F) corresponding to the given boundary condition.</h4>
+    <h4>(b) Define the <em>known</em> boundary conditions (BCs) at each of the points below.</h4>
+    <h4>(c) List the <em>unknown</em> reactions at each of the points below.</h4>
+    <h4>(d) Select any two force member(s) from the list below.</h4>
+</pl-question-panel>
+
+<p></p>
+<p></p>
+
+<table>
+    <tr>
+        <th>(a)</th>
+        <td colspan="2"><pl-matching answers-name="boundary" fixed-options-order="true">
+            <pl-statement match="C">Free</pl-statement>
+            <pl-statement match="F">Roller</pl-statement>
+            <pl-statement match="B">Pinned</pl-statement>
+            <pl-statement match="A">Fixed</pl-statement>
+            
+            <pl-option>A</pl-option>
+            <pl-option>B</pl-option>
+            <pl-option>C</pl-option>
+            <pl-option>F</pl-option>
+
+          </pl-matching>
+        </td>
+    </tr>
+
+    <tr>
+        <th rowspan="2">(b)</th>
+        <td>Point A</td>
+        <td>Point F</td>
+    </tr>
+    <tr>
+        <td>
+            <!-- Point A -->
+            <pl-checkbox answers-name="pointabc" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer correct="true">$\theta_Z$</pl-answer>
+                <pl-answer>$R_{AX}$</pl-answer>
+                <pl-answer>$R_{AY}$</pl-answer>
+                <pl-answer>$M_A$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <!-- Point F -->
+            <pl-checkbox answers-name="pointfbc" weight ="1" fixed-order="true">
+                <pl-answer>$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer correct="true">$R_{FX}$</pl-answer>
+                <pl-answer>$R_{FY}$</pl-answer>
+                <pl-answer correct="true">$M_F$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+
+    <tr>
+        <th rowspan="2">(c)</th>
+        <td>Point A</td>
+        <td>Point F</td>
+    </tr>
+    <tr>
+        <td>
+            <!-- Point A -->
+            <pl-checkbox answers-name="unknowna" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$R_{AX}$</pl-answer>
+                <pl-answer correct="true">$R_{AY}$</pl-answer>
+                <pl-answer correct="true">$M_A$</pl-answer>
+                <pl-answer>$None$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <!-- Point F -->
+            <pl-checkbox answers-name="unkownf" weight ="1" fixed-order="true">
+                <pl-answer>$R_{FX}$</pl-answer>
+                <pl-answer correct="true">$R_{FY}$</pl-answer>
+                <pl-answer>$M_F$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+
+    <tr>
+        <th>(d)</th>
+        <td colspan="2">
+            <pl-checkbox answers-name="twoforce" weight ="1" fixed-order="true">
+                <pl-answer>$AD$</pl-answer>
+                <pl-answer>$CD$</pl-answer>
+                <pl-answer >$CDEF$</pl-answer>
+                <pl-answer correct="true">$BE$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+</table>

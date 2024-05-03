@@ -1,0 +1,60 @@
+<!-- Spring 2021 Exam 1A Problem 6 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A ${{params.P}}$ lb force is applied to the beam as shown in the picture. Find the internal forces at point B.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.fx}} {{correct_answers.unitsf}}" answers-name="reactionx"
+                label="$f_x$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.fy}} {{correct_answers.unitsf}}" answers-name="reactiony"
+                label="$f_y$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mz}} {{correct_answers.unitsm}}" answers-name="moment"
+                label="$m_z$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

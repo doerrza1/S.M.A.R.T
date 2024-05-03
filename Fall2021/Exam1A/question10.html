@@ -1,0 +1,64 @@
+<!-- Fall 2021 Exam 1A Problem 10 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the loading shown, determine the internal loads (forces and moments) for a cut through point E.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <th>Forces</th>
+        <th>Moments</th>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.fx}} {{correct_answers.unitsf}}" answers-name="reactionx"
+                label="$f_x$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.fy}} {{correct_answers.unitsf}}" answers-name="reactiony"
+                label="$f_y$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.fz}} {{correct_answers.unitsf}}" answers-name="reactionz"
+                label="$f_z$" placeholder="Include Units" atol="1 N"></pl-units-input>
+        </td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mx}} {{correct_answers.unitsm}}" answers-name="momentx"
+                label="$m_x$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.my}} {{correct_answers.unitsm}}" answers-name="momenty"
+                label="$m_y$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.mz}} {{correct_answers.unitsm}}" answers-name="momentz"
+                label="$m_z$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>
