@@ -1,0 +1,156 @@
+<!-- Spring 2022 Exam 1B Problem 4 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The structure below is mad of links ABCD, BEF, and CE. It is loaded with a triangular distributed load 
+        between B and E, and a point load at F:
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Define the <em>known</em> boundary conditions (BCs) at each of the following points.</h4>
+    <h4>(b) List the <em>unknown</em> reactions at each of the following points.</h4>
+    <h4>(c) Select any two force member(s) in the list below.</h4>
+    <h4>(d) Draw the FBD for the system below, be sure to replace distributed loads with 
+        point loads.
+    </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Point A</th>
+        <th>Point D</th>
+    </tr>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <!-- Point A -->
+            <pl-checkbox answers-name="bca" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer>$R_{AX}$</pl-answer>
+                <pl-answer>$R_{AY}$</pl-answer>
+                <pl-answer correct="true">$M_A$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <!-- Point D -->
+            <pl-checkbox answers-name="bcd" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer>$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer>$R_{DX}$</pl-answer>
+                <pl-answer correct="true">$R_{DY}$</pl-answer>
+                <pl-answer correct="true">$M_D$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <!-- Point A -->
+            <pl-checkbox answers-name="unknowna" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$R_{AX}$</pl-answer>
+                <pl-answer correct="true">$R_{AY}$</pl-answer>
+                <pl-answer>$M_A$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <!-- Point D -->
+            <pl-checkbox answers-name="unknownd" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$R_{DX}$</pl-answer>
+                <pl-answer>$R_{DY}$</pl-answer>
+                <pl-answer>$M_D$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td colspan="2">
+            <pl-checkbox answers-name="twoforce" weight="1" fixed-order="true">
+    
+                <pl-answer>ABCD</pl-answer>
+                <pl-answer>BEF</pl-answer>
+                <pl-answer correct="true">CE</pl-answer>
+             
+            </pl-checkbox>
+        </td>
+    </tr>
+</table>
+
+
+
+<pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+        width="450" height="450">
+        <!-- FBD Answer -->
+        <pl-drawing-answer draw-error-box="true">
+            <!-- Point A vectors -->
+            <pl-vector x1="100" y1="100" angle="0" disregard-sense="true"></pl-vector>
+            <pl-vector x1="100" y1="100" angle="270" disregard-sense="true"></pl-vector>
+
+            <!-- Point D vector -->
+            <pl-vector x1="100" y1="350" angle="0" disregard-sense="true"></pl-vector>
+
+            <!-- Distributed load vector -->
+            <pl-vector x1="150" y1="200" angle="90" disregard-sense="true"></pl-vector>
+            
+            <!-- Point E vector -->
+            <pl-vector x1="250" y1="200" angle="315" disregard-sense="true"></pl-vector>
+
+            <!-- Point F vectors -->
+            <pl-vector x1="350" y1="200" angle="90" disregard-sense="true"></pl-vector>
+
+            
+        </pl-drawing-answer>
+
+        <!-- Initial Drawing State -->
+        <pl-drawing-initial>
+            <pl-rod x1="100" y1="200" x2="350" y2="200" width="20" label1="B" offsetx1="-40" offsety1="-15"
+                label2="F" offsetx2="-15" offsety2="20"></pl-rod>
+            <pl-rod x1="100" y1="350" x2="100" y2="100" width="20" label1="D" offsetx1="-30" offsety1="15"
+                label2="A" offsetx2="-40" offsety2="-15"></pl-rod>
+            <pl-point x1="250" y1="200" label="E" offsetx="-10" offsety="20"></pl-point>
+        </pl-drawing-initial>
+
+        <!-- Controls for FBD drawing -->
+        <pl-controls>
+            <pl-controls-group>
+                <pl-drawing-button type="pl-vector"></pl-drawing-button>
+                <pl-drawing-button type="pl-arc-vector-CCW"></pl-drawing-button>
+            </pl-controls-group>
+            <pl-controls-group>
+                <pl-drawing-button type="delete"></pl-drawing-button>
+            </pl-controls-group>
+        </pl-controls>
+    </pl-drawing>

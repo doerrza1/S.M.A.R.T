@@ -1,4 +1,4 @@
-<!-- Fall 2021 Exam 1A Problem 8 -->
+<!-- Spring 2022 Exam 1B Problem 10 -->
 
 <head>
     <style>
@@ -28,15 +28,25 @@
 </head>
 
 <pl-question-panel>
-    <h2>
-        A beam ABCD is loaded with a distributed load between BC and an applied load at point D, as shown. Find the internal forces 
-        for a cut at B, halfway between A and C.
-    </h2>
+    <h4>
+        A lower arm is an example of a cantilever beam. In the image shown, the arm has forces applied by the carried weight 
+        (L = ${{params.L}}$ lb) and the contraction of the biceps, which applies a traction force (T = ${{params.T}}$ lb).
+    </h4>
     
+    <p></p>
+
+    <h4>Find the internal forces and moments for a cut at A.</h4>
+
     <p></p>
     <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
     <p></p>
     
+    <h4>You may ignore the weight of the arm. Assume that the upper arm is aligned with the Y-axis, the traction force from 
+        the muscle has only a Y-component, and simplify the lower arm as a single beam. The elbow (point E) acts as a pivot joint.
+    </h4>
+
+    <p></p>
+
     <h4>You must support your work with a FBD and clearly labeled equilibrium equations.</h4>
 </pl-question-panel>
 
@@ -44,7 +54,7 @@
     <tr>
         <td>
             <pl-units-input correct-answer="{{correct_answers.fx}} {{correct_answers.unitsf}}" answers-name="reactionx"
-                label="$f_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+                label="$f_x$ =" placeholder="Include Units" atol="1 kN"></pl-units-input>
         </td>
     </tr>
     <tr>

@@ -1,4 +1,4 @@
-<!-- Fall 2021 Exam 1A Problem 8 -->
+<!-- Spring 2022 Exam 1A Problem 6 -->
 
 <head>
     <style>
@@ -29,8 +29,7 @@
 
 <pl-question-panel>
     <h2>
-        A beam ABCD is loaded with a distributed load between BC and an applied load at point D, as shown. Find the internal forces 
-        for a cut at B, halfway between A and C.
+        A ${{params.P}}$ kN force is applied to the beam in the picture. Find the support reactions.
     </h2>
     
     <p></p>
@@ -43,20 +42,20 @@
 <table>
     <tr>
         <td>
-            <pl-units-input correct-answer="{{correct_answers.fx}} {{correct_answers.unitsf}}" answers-name="reactionx"
-                label="$f_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.rdx}} {{correct_answers.units}}" answers-name="reactiondx"
+                label="$R_{DX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
         </td>
     </tr>
     <tr>
         <td>
-            <pl-units-input correct-answer="{{correct_answers.fy}} {{correct_answers.unitsf}}" answers-name="reactiony"
-                label="$f_y$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.rdy}} {{correct_answers.units}}" answers-name="reactiondy"
+                label="$R_{DY}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
         </td>
     </tr>
     <tr>
         <td>
-            <pl-units-input correct-answer="{{correct_answers.mz}} {{correct_answers.unitsm}}" answers-name="moment"
-                label="$m_z$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.rby}} {{correct_answers.units}}" answers-name="reactionby"
+                label="$R_{BY}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
         </td>
     </tr>
 </table>

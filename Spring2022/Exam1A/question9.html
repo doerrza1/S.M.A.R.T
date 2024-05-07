@@ -1,4 +1,4 @@
-<!-- Fall 2021 Exam 1A Problem 10 -->
+<!-- Spring 2022 Exam 1A Problem 9 -->
 
 <head>
     <style>
@@ -29,13 +29,19 @@
 
 <pl-question-panel>
     <h2>
-        For the loading shown, determine the internal loads (forces and moments) for a cut through point E.
+        An airplane wing is an example of a cantilevered beam. In this image shown, the wing has forces applied by the lift (L) and the 
+        engine thrust (T).
     </h2>
     
     <p></p>
     <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
     <p></p>
     
+    <h4>Find the internal forces for a cut at A.</h4>
+
+    <h4>You may ignore the weight of the wing.</h4>
+
+    <h4>You must support your work with a FBD and clearly labeled equilibrium equations.</h4>
 </pl-question-panel>
 
 <table>
@@ -44,14 +50,16 @@
         <th>Moments</th>
     </tr>
     <tr>
+        <!-- Forces -->
         <td>
             <pl-units-input correct-answer="{{correct_answers.fx}} {{correct_answers.unitsf}}" answers-name="reactionx"
-                label="$f_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+                label="$f_x$ =" placeholder="Include Units" atol="1 kN"></pl-units-input>
             <pl-units-input correct-answer="{{correct_answers.fy}} {{correct_answers.unitsf}}" answers-name="reactiony"
                 label="$f_y$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
             <pl-units-input correct-answer="{{correct_answers.fz}} {{correct_answers.unitsf}}" answers-name="reactionz"
-                label="$f_z$ =" placeholder="Include Units" atol="1 N"></pl-units-input>
+                label="$f_z$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
         </td>
+        <!-- Moments -->
         <td>
             <pl-units-input correct-answer="{{correct_answers.mx}} {{correct_answers.unitsm}}" answers-name="momentx"
                 label="$m_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>

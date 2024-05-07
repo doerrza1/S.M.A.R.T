@@ -2,7 +2,7 @@
 
 <pl-question-panel>
     <h2>
-        A pressure vessel is pressurized until the axial stress is $\sigma_A$ = ${{params.sigma_A}} \rm\psi$.
+        A pressure vessel is pressurized until the axial stress is $\sigma_A$ = ${{params.sigma_A}} psi$.
     </h2>
     
     <p></p>
@@ -22,3 +22,51 @@
 
 <pl-units-input correct-answer="{{correct_answers.sigma_h}} {{correct_answers.units}}" answers-name="sig"
     label="$\sigma_h$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+
+<pl-question-panel>
+    <h4>
+        (b) Using the LCS defined in the image, locate points g and h on the cross section diagram.
+    </h4>
+
+    <p></p>
+    <pl-figure file-name="IM3_1e_ss24_8080_2updated.png" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+
+</pl-question-panel>
+
+<table>
+    <tr>
+        <th>Point g</th>
+        <th>Point h</th>
+    </tr>
+    <tr>
+        <td>
+            <pl-multiple-choice answers-name="pointg" weight="1" fixed-order="true">
+    
+                <pl-answer correct="true">1</pl-answer>
+                <pl-answer>2</pl-answer>
+                <pl-answer>3</pl-answer>
+                <pl-answer>4</pl-answer>
+                <pl-answer>5</pl-answer>
+                <pl-answer>6</pl-answer>
+                <pl-answer>7</pl-answer>
+                <pl-answer>8</pl-answer>
+
+            </pl-multiple-choice>
+        </td>
+        <td>
+            <pl-multiple-choice answers-name="pointh" weight="1" fixed-order="true">
+    
+                <pl-answer>1</pl-answer>
+                <pl-answer>2</pl-answer>
+                <pl-answer correct="true">3</pl-answer>
+                <pl-answer>4</pl-answer>
+                <pl-answer>5</pl-answer>
+                <pl-answer>6</pl-answer>
+                <pl-answer>7</pl-answer>
+                <pl-answer>8</pl-answer>
+
+            </pl-multiple-choice>
+        </td>
+    </tr>
+</table>

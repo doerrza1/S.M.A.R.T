@@ -1,0 +1,65 @@
+<!-- Fall 2021 Exam 1B Problem 4 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        In the figure shown, a ${{params.P}}$ N force is applied at point A. Find the moment that this forces creates about Point C.
+    </h4>
+    <h4>
+        If the pipe is cut along the dashed line, Point C would be located at the centroid of the surface of the cut pipe.
+    </h4>
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>
+        <strong>NOTE: </strong> This is just a moment calculation. In class we referred to this as $M^C$ or $M_{@C}$.
+    </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mi}} {{correct_answers.units}}" answers-name="imoment"
+                label="$M_C$ i&#770; =" placeholder="Include Units" atol="1 Nm"></pl-units-input>
+        </td> 
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mj}} {{correct_answers.units}}" answers-name="jmoment"
+              label="$M_C$ j&#770; =" placeholder="Include Units" atol="1 Nm"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mk}} {{correct_answers.units}}" answers-name="kmoment"
+              label="$M_C$ k&#770; =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>
