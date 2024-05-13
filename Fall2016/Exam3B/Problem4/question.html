@@ -1,0 +1,38 @@
+<!-- Fall 2016 Exam 3B Problem 4 -->
+<head>
+    <style>
+    h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A torque <em>T = ${{params.T}}$ lb*in</em> is applied to rod ABC as shown. Solve for the reactions at each wall. 
+        You must draw a proper FBD as part of your solution process.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.ma}} {{correct_answers.units}}" answers-name="momenta"
+                label="$M_A$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mc}} {{correct_answers.units}}" answers-name="momentc"
+                label="$M_C$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

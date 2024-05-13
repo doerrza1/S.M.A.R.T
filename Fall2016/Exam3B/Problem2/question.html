@@ -1,0 +1,63 @@
+<!-- Fall 2016 Exam 3B Problem 2 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        Structural steel has a yield stress of ${{params.yp}}$ ksi in tension. If the axially-loaded 
+        steel bar shown below experiences a uni-axial stress state with $\sigma_x$ = ${{params.sigx}}$ ksi, 
+        what is the factor of safety according to:
+    </h2>
+    
+    <h4>(a) the maximum principal stress criterion</h4>
+    <h4>(b) the maximum shear stress (Tresca) criterion</h4>
+    <h4>(c) the maximum distortional strain-energy (von Mises) criterion</h4>
+
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td><pl-number-input correct-answer="{{correct_answers.fs1}}" answers-name="parta"
+            label="$F.S$" rtol="2e-2" placeholder=""></pl-number-input></td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td><pl-number-input correct-answer="{{correct_answers.fs2}}" answers-name="partb"
+            label="$F.S$" rtol="2e-2" placeholder=""></pl-number-input></td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td><pl-number-input correct-answer="{{correct_answers.fs3}}" answers-name="partc"
+            label="$F.S$" rtol="2e-2" placeholder=""></pl-number-input></td>
+    </tr>
+</table>

@@ -1,0 +1,68 @@
+<!-- Fall 2016 Exam 3B Problem 8 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        The stepped bar shown below is fixed at point A and is initially free at point C. At point B, a thin, rigid insulator 
+        seperates bar 2 from bar 2. Bar 1 is made of steel, with Young's modulus $E_1$ = 200 GPa, cross-sectional area 
+        $A_1$ = 100 $mm^2$, and length $L_1$ = 80 mm. Bar 2 is made of aluminum, with Young's modulus $E_2$ = 72 GPa, coefficient 
+        of thermal expansion $\alpha_2$ = 23 x $10^{-6}$ per degree C, cross-sectional area $A_2$ = 60 $mm^2$, and length 
+        $L_1$ = 50 mm. Two mechanical loads F = 200 kN are applied at point B, and a thermal load $\delta$T = 80 degrees C is 
+        <strong><em>applied to bar 2 only</em></strong>. After the loading is applied:
+    </h4>
+    
+    <h4>(a) determine whether or not point C contacts the fixed wall to the right</h4>
+    <h4>(b) determine the axial stresses in bar 1</h4>
+
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-multiple-choice answers-name="touch" weight="1" fixed-order="true">
+    
+                <pl-answer correct="true">Point C DOES contacts the wall</pl-answer>
+                <pl-answer>Point C DOESN'T contact the wall</pl-answer>
+             
+            </pl-multiple-choice>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sigx}} {{correct_answers.units}}" answers-name="sigma"
+                label="$\sigma_{XAB}$" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

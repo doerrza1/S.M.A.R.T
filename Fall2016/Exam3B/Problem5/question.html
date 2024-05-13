@@ -1,0 +1,73 @@
+<!-- Fall 2016 Exam 3B Problem 5 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A pressure vessel of ${{params.d}}$" diameter and ${{params.t}}$" wall thickness is loaded by an axial force 
+        <em>F = ${{params.F}}$ kips</em>. The internal gage pressure in the vessel is ${{params.p}}$ psi.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the stress state at point G due to F.</h4>
+    <h4>(b) Find the stress state at point G due to internal pressure</h4>
+    <h4>(c) Using superposition, find the stress state at point G due to combined loads F 
+        and internal pressure.
+    </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sigx}} {{correct_answers.units}}" answers-name="sigF"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sig2}} {{correct_answers.units}}" answers-name="sig2p"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sig1}} {{correct_answers.units}}" answers-name="sig1p"
+                label="$\sigma_z$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.superx}} {{correct_answers.units}}" answers-name="posx"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.superz}} {{correct_answers.units}}" answers-name="posz"
+                label="$\sigma_z$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>
