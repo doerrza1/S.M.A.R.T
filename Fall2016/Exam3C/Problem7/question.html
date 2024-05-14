@@ -1,0 +1,29 @@
+<!-- Fall 2016 Exam 3C Problem 7 -->
+
+<head>
+    <style>
+    h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A solid steel (inner) shaft and a hollow aluminum (outer) tube are both connected to a fixed support 
+        on the left and to a rigid disk on the right. An axial force $P_0$ = ${{params.P}}$ kN is applied to the 
+        rigid disk. Knowing that <em>E = 200 GPa</em> for steel and <em>E = 72 Gpa</em> for aluminum, determine the 
+        maximum normal stress in the aluminum shaft.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.siga}} {{correct_answers.units}}" answers-name="sigmaalum"
+    label="$\sigma_{Al}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>

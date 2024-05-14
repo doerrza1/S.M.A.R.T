@@ -1,0 +1,73 @@
+<!-- Fall 2016 Exam 4B Problem 8 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A uniformly distributed load <em>$p_0$ = ${{params.P}}$ N/M</em> is applied to the beam at point B. The beam cross section is shown. 
+        The beam has a length <em>L = ${{params.L}}$m</em> and <em>E = 200MPa</em>.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the support reactions.</h4>
+    <h4>(b) Find the x value(s) for where the beam is most likely to fail.</h4>
+    <h4>(c) What is the factor of safety for the beam if $\sigma_{yp}$ = 250MPa?</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.rax}} {{correct_answers.unitsr}}" answers-name="reactionax"
+                label="$R_{AX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.ray}} {{correct_answers.unitsr}}" answers-name="reactionay"
+                label="$R_{AY}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.rby}} {{correct_answers.unitsr}}" answers-name="reactionb"
+                label="$R_{BY}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.ma}} {{correct_answers.unitsm}}" answers-name="momenta"
+                label="$M_A$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.x}} {{correct_answers.unitsx}}" answers-name="position"
+                label="$x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fs}}" answers-name="factorsafety"
+                label="$F.S$" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,173 @@
+<!-- Fall 2016 Exam 3C Problem 1 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The beam ABCD is loaded as shown.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Define the <em>known</em> boundary conditions (BCs) at each point</h4>
+    <h4>(b) List the <em>unknown</em> reactions at each point</h4>
+    <h4>(c) Draw a complete free body diagram (FBD) of the structure in the above figure </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td></td>
+        <th>Point A</th>
+        <th>Point C</th>
+        <th>Point D</th>
+        <th>Point E</th>
+    </tr>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-checkbox answers-name="pointabc" weight ="1" fixed-order="true">
+                <pl-answer>$u_X$</pl-answer>
+                <pl-answer>$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer correct="true">$R_{AX}$</pl-answer>
+                <pl-answer correct="true">$R_{AY}$</pl-answer>
+                <pl-answer correct="true">$M_A$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="pointcbc" weight ="1" fixed-order="true">
+                <pl-answer>$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer correct="true">$R_{CX}$</pl-answer>
+                <pl-answer>$R_{CY}$</pl-answer>
+                <pl-answer correct="true">$M_C$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="pointdbc" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer correct="true">$\theta_Z$</pl-answer>
+                <pl-answer>$R_{DX}$</pl-answer>
+                <pl-answer>$R_{DY}$</pl-answer>
+                <pl-answer>$M_D$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="pointebc" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer>$R_{EX}$</pl-answer>
+                <pl-answer>$R_{EY}$</pl-answer>
+                <pl-answer correct="true">$M_E$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-checkbox answers-name="unknowna" weight ="1" fixed-order="true">
+                <pl-answer>$R_{AX}$</pl-answer>
+                <pl-answer>$R_{AY}$</pl-answer>
+                <pl-answer>$M_A$</pl-answer>
+                <pl-answer correct="true">$None$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="unknownc" weight ="1" fixed-order="true">
+                <pl-answer>$R_{CX}$</pl-answer>
+                <pl-answer correct="true">$R_{CY}$</pl-answer>
+                <pl-answer>$M_C$</pl-answer>
+                <pl-answer>$None$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="unknownd" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$R_{DX}$</pl-answer>
+                <pl-answer correct="true">$R_{DY}$</pl-answer>
+                <pl-answer correct="true">$M_D$</pl-answer>
+                <pl-answer>$None$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="unknowne" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$R_{EX}$</pl-answer>
+                <pl-answer correct="true">$R_{EY}$</pl-answer>
+                <pl-answer>$M_E$</pl-answer>
+                <pl-answer>$None$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+</table>
+
+<pl-drawing gradable="true" grid-size="20" answers-name="beam" hide-answer-panel="false"
+        width="550" height="400">
+        <!-- FBD Answer -->
+        <pl-drawing-answer draw-error-box="true">
+            <!-- Point A vector -->
+            <pl-vector x1="75" y1="225" angle="90" disregard-sense="true"></pl-vector>
+
+            <!-- Point E vectors -->
+            <pl-vector x1="169" y1="125" angle="270" disregard-sense="true"></pl-vector>
+            <pl-vector x1="169" y1="125" angle="0" disregard-sense="true"></pl-vector>
+            
+            <!-- Point C vector -->
+            <pl-vector x1="263" y1="225" angle="270" disregard-sense="true"></pl-vector>
+
+            <!-- Point D vectors -->
+            <pl-vector x1="450" y1="225" angle="315" disregard-sense="true"></pl-vector>
+            <pl-vector x1="450" y1="225" angle="45" disregard-sense="true"></pl-vector>
+            <pl-arc-vector x1="450" y1="225" clockwise-direction="false"></pl-arc-vector>
+
+            
+        </pl-drawing-answer>
+
+        <!-- Initial Drawing State -->
+        <pl-drawing-initial>
+            <pl-rod x1="75" y1="225" x2="450" y2="225" width="20" label1="A" offsetx1="-15" offsety1="15"
+                label2="D" offsetx2="-15" offsety2="15"></pl-rod>
+            <pl-rod x1="169" y1="225" x2="169" y2="125" width="20" label1="B" offsetx1="-15" offsety1="15"
+                label2="E" offsetx2="-25" offsety2="0"></pl-rod>
+            <pl-point x1="263" y1="225" label="C" offsetx="-10" offsety="15"></pl-point>
+        </pl-drawing-initial>
+
+        <!-- Controls for FBD drawing -->
+        <pl-controls>
+            <pl-controls-group>
+                <pl-drawing-button type="pl-vector"></pl-drawing-button>
+                <pl-drawing-button type="pl-arc-vector-CCW"></pl-drawing-button>
+            </pl-controls-group>
+            <pl-controls-group>
+                <pl-drawing-button type="delete"></pl-drawing-button>
+            </pl-controls-group>
+        </pl-controls>
+    </pl-drawing>
