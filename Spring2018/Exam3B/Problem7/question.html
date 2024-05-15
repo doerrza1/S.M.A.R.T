@@ -1,0 +1,75 @@
+<!-- Spring 2018 Exam 3B Problem 7 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        For the beam with the loading shown, compute the stress state at the top and bottom of cut D.
+    </h4>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the principle stresses at point g.</h4>
+    <h4>(b) Find the principle stresses at point h.</h4>
+    <h4>(c) Find the factor of safety if $\sigma_{yp}$ = 10 ksi?
+    </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.g1}} {{correct_answers.units}}" answers-name="sigmag1"
+                label="$\sigma_1$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.g2}} {{correct_answers.units}}" answers-name="sigmag2"
+                label="$\sigma_2$ =" placeholder="Include Units" atol="1 ksi"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.g3}} {{correct_answers.units}}" answers-name="sigmag3"
+                label="$\sigma_3$ =" placeholder="Include Units" atol="1 ksi"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.h1}} {{correct_answers.units}}" answers-name="sigmah1"
+                label="$\sigma_1$ =" placeholder="Include Units" atol="1 ksi"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.h2}} {{correct_answers.units}}" answers-name="sigmah2"
+                label="$\sigma_2$ =" placeholder="Include Units" atol="1 ksi"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.h3}} {{correct_answers.units}}" answers-name="sigmah3"
+                label="$\sigma_3$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fs}}" answers-name="factorsafety"
+                label="$F.S$ =" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+</table>

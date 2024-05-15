@@ -1,0 +1,66 @@
+<!-- Spring 2018 Exam 3A Problem 2 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        Given the 3-D Mohr's circle below, find the principal stresses and the maximum shear.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sig1}} {{correct_answers.units}}" answers-name="simga1"
+                label="$\sigma_1$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sig2}} {{correct_answers.units}}" answers-name="sigma2"
+                label="$\sigma_2$ =" placeholder="Include Units" atol="1 MPa"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sig3}} {{correct_answers.units}}" answers-name="sigma3"
+                label="$\sigma_3$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.tau}} {{correct_answers.units}}" answers-name="taumax"
+                label="$\tau_{max}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

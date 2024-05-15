@@ -1,0 +1,82 @@
+<!-- Spring 2018 Exam 3A Problem 8 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        A pressurized cylindrical tank is loaded with a horizontal force <em>F = ${{params.F}}$ kip</em>. The tank itself 
+        has a thickness <em>t = ${{params.t}}$ in</em> and a radius <em>r = ${{params.r}}$ ft</em>. The gas pressure 
+        of the tank is <em>p = ${{params.p}}$ psi</em>. For the stress element g drawn on the side of the tank, answer the 
+        following questions.
+    </h4>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the stress state at g caused by the force F.</h4>
+    <h4>(b) Find the stress state at g caused by the pressure in the tank.</h4>
+    <h4>(c) Using superpostion find the total stress state at point G.</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.fx}} {{correct_answers.units}}" answers-name="forcex"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.fy}} {{correct_answers.units}}" answers-name="forcey"
+                label="$\sigma_y$ =" placeholder="Include Units" atol="1 psi"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.tauf}} {{correct_answers.units}}" answers-name="forcetau"
+                label="$tau_{xy}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.px}} {{correct_answers.units}}" answers-name="pressurex"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.py}} {{correct_answers.units}}" answers-name="pressurey"
+                label="$\sigma_y$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.taup}} {{correct_answers.units}}" answers-name="pressuretau"
+                label="$tau_{xy}$ =" placeholder="Include Units" atol="1 psi"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sigx}} {{correct_answers.units}}" answers-name="totalx"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sigy}} {{correct_answers.units}}" answers-name="totaly"
+                label="$\sigma_y$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.tauxy}} {{correct_answers.units}}" answers-name="totaltau"
+                label="$tau_{xy}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    
+</table>

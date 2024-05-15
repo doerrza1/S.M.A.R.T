@@ -1,0 +1,81 @@
+<!-- Spring 2018 Exam 3B Problem 6 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        A pressurized cylindrical tank is loaded with a compressive force <em>F = ${{params.F}}$ kN</em> as drawn. 
+        The tank itself has an outer radius of ${{params.r}}$ meters, a wall thickness of ${{params.t}}$ cm, and a 
+        pressure of <em>P = ${{params.P}}$ N/$m^2$</em>. The tank is welded at an angle of 30 degrees. Consider a 
+        stress element drawn on the side of the tank, answer the following questions.
+    </h4>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the stress state at g.</h4>
+    <h4>(b) Find and draw the stress state for an element that is aligned with the weld 
+        ($\sigma_{x'}$, $\sigma_{y'}$, $\tau_{x'y'}$).
+    </h4>
+    <h4>(c) The shear stress parallel to the weld cannot exceed $\tau_{allowable}$ = 138 kPa. What is the factor of 
+        safety for this tank?
+    </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sigx}} {{correct_answers.units}}" answers-name="sigmax"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sigy}} {{correct_answers.units}}" answers-name="sigmay"
+                label="$\sigma_y$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.tauxy}} {{correct_answers.units}}" answers-name="shear"
+                label="$\tau_{xy}$ =" placeholder="Include Units" atol="1 kPa"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.primex}} {{correct_answers.units}}" answers-name="sigmaxprime"
+                label="$\sigma_{x'}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.primey}} {{correct_answers.units}}" answers-name="sigmayprime"
+                label="$\sigma_{y'}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.primetau}} {{correct_answers.units}}" answers-name="tauxyprime"
+                label="$\tau_{x'y'}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fs}}" answers-name="factorsafety"
+                label="$F.S$ =" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+</table>

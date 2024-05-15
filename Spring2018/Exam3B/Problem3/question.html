@@ -1,0 +1,63 @@
+<!-- Spring 2018 Exam 3B Problem 3 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        The column shown is loaded with two different axial loads (A) and (B). Your intern has calculated the stress state 
+        at <strong>g</strong> for each of these loadings (shown on the stress element to the right). Use superposition 
+        to determine the stress state of the beam with the loadings shown in (C) and (D). 
+    </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(A)</td>
+        <td colspan="2"><pl-figure file-name="" directory="clientFilesQuestion"></pl-figure></td>
+    </tr>
+    <tr>
+        <td>(B)</td>
+        <td colspan="2"><pl-figure file-name="" directory="clientFilesQuestion"></pl-figure></td>
+    </tr>
+    <tr>
+        <td>(C)</td>
+        <td><pl-figure file-name="" directory="clientFilesQuestion"></pl-figure></td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.superc}} {{correct_answers.units}}" answers-name="combinedc"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(C)</td>
+        <td><pl-figure file-name="" directory="clientFilesQuestion"></pl-figure></td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.superd}} {{correct_answers.units}}" answers-name="combinedd"
+                label="$\simga_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>
