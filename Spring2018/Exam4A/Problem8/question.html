@@ -1,0 +1,62 @@
+<!-- Spring 2018 Exam 4A Problem 8 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        A steel cylindrical propane tank was installed incorrectly resulting in an axial torque, T (see figure). 
+        The current pressure in the tank is P.
+    </h4>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>The tank has a thickness of 0.25 in and an outer radius of 1.5 ft. A 45 degree strain rosette 
+        placed on the side of the tank reads:
+    </h4>
+
+    <h4>$\epsilon_1$ = 19.64$\mu$, $\epsilon_2$ = 114.7$\mu$, $\epsilon_1$ = 117.8$\mu$</h4>
+
+    <h4>Find the magnitude of the torque, T, and the pressure, P, in the tank.</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.T}} {{correct_answers.unitsT}}" answers-name="torque"
+                label="$T$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.P}} {{correct_answers.unitsP}}" answers-name="pressure"
+                label="$P$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,77 @@
+<!-- Spring 2019 Exam 3A Problem 5 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A pressurized cylindrical tank is loaded with a compressive force <em>F = 2 kN</em> as shown. The tank itself
+        has an outer radius of 2 meters, a wall thickness of 1 cm, and a pressure <em>P = 40 N/$m^2$.</em> The tank is 
+        welded together at an angle of 30 degrees. Consider a stress element drawn on the side of the takn, answer the 
+        following questions.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the stress state at g.</h4>
+    <h4>(b) Find the strerss state for an element that is aligned with the weld. ($\sigma_{x'}$, $\sigma_{y'}, $\tau_{x'y'}$)</h4>
+    <h4>(c) The stress perpendicular to the weld cannot exceed $\sigma_{yp} = 10 kPa. What is the factor of safety of the weld?</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sigx}} {{correct_answers.units}}" answers-name="sigmax"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sigy}} {{correct_answers.units}}" answers-name="sigmay"
+                label="$\sigma_y$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.tau}} {{correct_answers.units}}" answers-name="tauxy"
+                label="$\tau_{xy}$ =" placeholder="Include Units" atol="1 kPa"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.xprime}} {{correct_answers.units}}" answers-name="sigmaxprime"
+                label="$\sigma_{x'}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.yprime}} {{correct_answers.units}}" answers-name="sigmayprime"
+                label="$\sigma_{y'}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.tauprime}} {{correct_answers.units}}" answers-name="tauxyprime"
+                label="$\tau_{x'y'}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(c)</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fs}}" answers-name="factor"
+                label="$F.S$ =" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+</table>

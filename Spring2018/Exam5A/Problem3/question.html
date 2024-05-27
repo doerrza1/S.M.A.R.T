@@ -1,0 +1,28 @@
+<!-- Spring 2018 Exam 5A Problem 3 -->
+
+<head>
+    <style>
+    h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        When beam AB is loaded with a load $P_1$ as shown in figure 3a, the deflection at point B is ${{params.p1}}$mm.
+        When beam AB is loaded with a distributed load $q_2$ as shown in Figure 3b, the deflection at point B is 
+        ${{params.p2}}$mm. What is the deflection at point B when the beam Ab is loaded as shown in Figure 3c?
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.y}} {{correct_answers.units}}" answers-name="deflection"
+    label="$y_B$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>

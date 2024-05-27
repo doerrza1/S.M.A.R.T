@@ -1,0 +1,150 @@
+<!-- Spring 2018 Exam 5B Problem 1 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the beam shown answer the following questions:
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>All pins are 5mm in radius.</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td colspan="3">(a) Define the <em>known</em> boundary conditions at each of the following points.</td>
+    </tr>
+    <tr>
+        <td>Point A</td>
+        <td>Point B</td>
+        <td>Point C</td>
+    </tr>
+    <tr>
+        <td>
+            <pl-checkbox answers-name="pointA" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer>$R_{AX}$</pl-answer>
+                <pl-answer>$R_{AY}$</pl-answer>
+                <pl-answer correct="true">$M_A$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="pointB" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer>$R_{BX}$</pl-answer>
+                <pl-answer>$R_{BY}$</pl-answer>
+                <pl-answer correct="true">$M_B$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="pointC" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer correct="true">$\theta_Z$</pl-answer>
+                <pl-answer>$R_{CX}$</pl-answer>
+                <pl-answer>$R_{CY}$</pl-answer>
+                <pl-answer>$M_C$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">(b) Which pin is experiencing single shear?</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <pl-multiple-choice answers-name="single" weight="1" fixed-order="true">
+    
+                <pl-answer correct="true">$A$</pl-answer>
+                <pl-answer>$B$</pl-answer>
+                <pl-answer>$Neither$</pl-answer>
+
+             
+            </pl-multiple-choice>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">(c) Which pin is experiencing double shear?</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <pl-multiple-choice answers-name="single" weight="1" fixed-order="true">
+    
+                <pl-answer>$A$</pl-answer>
+                <pl-answer correct="true">$B$</pl-answer>
+                <pl-answer>$Neither$</pl-answer>
+
+             
+            </pl-multiple-choice>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">(d) Bearing stress is defined as $\sigma_B$ = P/$A_B$. What is the bearing area?</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <pl-units-input correct-answer="{{correct_answers.bearing}} {{correct_answers.units}}" answers-name="bear"
+                label="$A_B$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3">(e) Pin Shear is defined as $\tau_{avg}$ = V/A. What is the shear area?</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <pl-units-input correct-answer="{{correct_answers.shear}} {{correct_answers.units}}" answers-name="sarea"
+                label="$A$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3">(f) If $\sigma_x$ = $f_x$/A is the average in beam BC. What area should be used if:</td>
+    </tr>
+    <tr>
+        <td>a. The 40 kN load is directed down (as shown)?</td>
+        <td colspan="2">
+            <pl-units-input correct-answer="{{correct_answers.down}} {{correct_answers.units}}" answers-name="downward"
+                label="$A$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>b. The 40 kN load is directed upward instead?</td>
+        <td colspan="2">
+            <pl-units-input correct-answer="{{correct_answers.up}} {{correct_answers.units}}" answers-name="upwards"
+                label="$A$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

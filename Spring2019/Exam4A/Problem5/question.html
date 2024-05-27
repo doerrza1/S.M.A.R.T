@@ -1,0 +1,61 @@
+<!-- Spring 2019 Exam 4A Problem 5 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The beam shown below is loaded with a total 12 kip load at section B. The beam is fixed at walls A and C. Before being 
+        loaded the beam had no internal stresses. You may ignore the width of section B.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the reactions at A and C.</h4>
+    <h4>(b) How far does point B move?</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.rax}} {{correct_answers.units}}" answers-name="reactiona"
+                label="$R_{AX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.rcx}} {{correct_answers.units}}" answers-name="reactionc"
+                label="$R_{CX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.delta}}" answers-name="delb"
+                label="$\delta_B$ =" rtol="2e-2" placeholder="" suffix="$\mu$*in"></pl-number-input>
+        </td>
+    </tr>
+</table>

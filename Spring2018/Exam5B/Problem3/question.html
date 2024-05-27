@@ -1,0 +1,62 @@
+<!-- Spring 2018 Exam 5B Problem 3-->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the system shown, beam BC is aluminum. Compute the critical buckling loads and determine the 
+        factor of safety for this system. Length <em>L = 20cm</em>. Hint: the beam buckles in 2 directions.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>Use the l.c.s defined in the figure.</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.pz}} {{correct_answers.units}}" answers-name="critz"
+                label="$P_{cr}(z)$ = " placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.py}} {{correct_answers.units}}" answers-name="crity"
+                label="$P_{cr}(y)$ = " placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fs}}" answers-name="factor"
+                label="$F.S$ =" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,62 @@
+<!-- Spring 2019 Exam 4A Problem 6 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h4>
+        The shaft shown below is fixed at point A and free to rotate at point D. Two belts are connected (one at B and 
+        one at C). Find the angle of twist in the shaft at point D.
+    </h4>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+
+    <h4>The shaft has a diameter of <em>d = 20mm</em>.</h4>
+    <h4>Does a point on the top of the shaft at D move in the positive or negative z direction?</h4>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.phi}}" answers-name="agnle"
+                label="$\phi_{AD}$ =" rtol="2e-2" placeholder="radians"></pl-number-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-multiple-choice answers-name="directions" weight="1" fixed-order="true">
+    
+                <pl-answer>Positive z</pl-answer>
+                <pl-answer correct="true">Negative z</pl-answer>
+             
+            </pl-multiple-choice>
+        </td>
+    </tr>
+</table>

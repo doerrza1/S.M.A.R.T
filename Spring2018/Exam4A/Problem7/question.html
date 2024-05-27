@@ -1,0 +1,71 @@
+<!-- Spring 2018 Exam 4A Problem 7 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A circular aluminum bar ABC fits perfectly between two fixed walls. A ${{params.P}}$ kN force is applied at 
+        point B (as shown) and the temperature of the bar is raised by $\Delta$T = 10 C. The radius of the bar is 
+        ${{params.r}}$ mm.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Find the reaction forces at A and C.</h4>
+
+    <h4>(b) Is the beam more likely to fall between points AB or between BC?</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td rowspan="2">(a)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.rax}} {{correct_answers.units}}" answers-name="reactiona"
+                label="$R_{AX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.rcx}} {{correct_answers.units}}" answers-name="reactionc"
+                label="$R_{CX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-multiple-choice answers-name="partb" weight="1" fixed-order="true">
+    
+                <pl-answer>Between AB</pl-answer>
+                <pl-answer correct="true">Between BC</pl-answer>
+             
+            </pl-multiple-choice>
+        </td>
+    </tr>
+</table>

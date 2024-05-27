@@ -1,0 +1,54 @@
+<!-- Spring 2019 Exam 4A Problem 3 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the two-dimensional state of stress shown, calculate $\epsilon_z$ and $\Upsilon_{xy}$. The material is steel.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.ez}}" answers-name="epsilon"
+                label="$\epsilon_z$ =" rtol="2e-2" placeholder="" suffix="$\mu$"></pl-number-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.up}}" answers-name="Upsilon"
+                label="$\Upsilon_{xy}$ =" rtol="2e-2" placeholder="" suffix="$\mu*rad$"></pl-number-input>
+        </td>
+    </tr>
+</table>
