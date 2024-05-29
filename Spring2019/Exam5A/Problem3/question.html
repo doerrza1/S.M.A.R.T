@@ -1,0 +1,28 @@
+<!-- Spring 2019 Exam 5A Problem 3 -->
+
+<head>
+    <style>
+    h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The ${{params.h}}$ ft tall beam shown, is made from steel ($\sigma_{yp}$ = 36 ksi). It is subject to 
+        a compressive load, P. The beam has a 1"x2" rectangular cross section.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>Find the maximum load the beam can support before buckling.</h4>
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.pcrit}} {{correct_answers.units}}" answers-name="critical"
+    label="$P_{crit}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>

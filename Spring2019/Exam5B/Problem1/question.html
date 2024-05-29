@@ -1,0 +1,56 @@
+<!-- Spring 2019 Exam 5B Problem 1 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        Use the beam below to answer the following questions.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a) How many reactions/moments must be removed from the system before it is statically determinate?</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.static}}" answers-name="remove"
+                label="" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b) If you use superposition to divide the beam into statically determinate parts, how many will you need?</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.superpos}}" answers-name="split"
+                label="" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+</table>
