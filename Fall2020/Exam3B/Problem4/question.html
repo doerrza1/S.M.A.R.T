@@ -1,0 +1,50 @@
+<!-- Fall 2020 Exam 3B Problem 4 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The beam shown is a hollow tube (cross section shown on the right) made of cupronickel ($\sigma_{yp}$ = 100 MPa).
+        The thickness of the cross section is constant and equal to 5 cm. What is the maximum value the moment T can 
+        assume if the required factor of safety is 2.3? Use the maximum shear (Tresca) design criterion.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.T}} {{correct_answers.units}}" answers-name="torque"
+                label="$T_{allowable}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

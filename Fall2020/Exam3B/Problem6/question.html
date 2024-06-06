@@ -1,0 +1,54 @@
+<!-- Fall 2020 Exam 3B Problem 6 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The beam shown is loaded with 2 concentrated loads of 13 kN and a distributed load of 20 kN/m. The beam 
+        has the cross section shown on the right, and is made of steel ($\sigma_{yp}$ = 180 MPa). Evaluate the 
+        principal stresses at point k (top of the cross section) on section E, located at the midpoint between C and D.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sig1}} {{correct_answers.units}}" answers-name="sigma1"
+                label="$\sigma_1$ =" placeholder="Include Units" atol="1 MPa"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sig2}} {{correct_answers.units}}" answers-name="sigma2"
+                label="$\sigma_2$ =" placeholder="Include Units" atol="1 MPa"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sig3}} {{correct_answers.units}}" answers-name="sigma3"
+                label="$\sigma_3$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

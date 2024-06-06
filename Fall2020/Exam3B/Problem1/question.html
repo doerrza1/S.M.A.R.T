@@ -1,0 +1,53 @@
+<!-- Fall 2020 Exam 3B Problem 1 -->
+
+<head>
+    <style>
+    h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+    h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+    </style>
+</head>
+
+<table>
+    <tr>
+        <td rowspan="2">(a)</td>
+        <td>An engineer analyzes three likely failure points of a bracket. She finds the following F.S.: 
+            $FS_1$ = 2.13, $FS_2$ = 4.34, $FS_3$ = 3.00. What is the factor of safety for the bracket?
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fsa}}" answers-name="bracket"
+                label="$FS_{bracket}$ =" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">(b)</td>
+        <td>What is the definition of the smallest allowable factor of safety?</td>
+    </tr>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fsb}}" answers-name="smallest"
+                label="$FS_{min}$ =" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">(c)</td>
+        <td>A beam made of concrete ($\sigma_{yp}^T$ = 1 MPa, $\sigma_{yp}^C$ = 30 MPa) is loaded 
+            with a bending moment taht generates a normal stress of $\sigma_x$ = +-400 kPa (tensile 
+            at the bottom of the cross section, compressive at the top). What is the factor of safety 
+            of the beam.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.fsc}}" answers-name="beam"
+                label="$FS_{beam}$ =" rtol="2e-2" placeholder=""></pl-number-input>
+        </td>
+    </tr>
+</table>
