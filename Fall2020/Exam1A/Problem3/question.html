@@ -1,0 +1,119 @@
+<!-- Fall 2020 Exam 1A Problem 3 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the structure shown below:
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td rowspan = 3>(a)</td>
+        <td colspan="3">Define the <em>known</em> boundary conditions (BCs) at each of the following points.</td>
+    </tr>
+    <tr>
+        <td>Point B</td>
+        <td>Point E</td>
+        <td>Point F</td>
+    </tr>
+    <tr>
+        <td>
+            <pl-checkbox answers-name="knownb" weight ="1" fixed-order="true">
+                <pl-answer>$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer correct="true">$R_{BX}$</pl-answer>
+                <pl-answer>$R_{BY}$</pl-answer>
+                <pl-answer correct="true">$M_B$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="knowne" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$u_X$</pl-answer>
+                <pl-answer correct="true">$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer>$R_{EX}$</pl-answer>
+                <pl-answer>$R_{EY}$</pl-answer>
+                <pl-answer correct="true">$M_E$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="knownf" weight ="1" fixed-order="true">
+                <pl-answer>$u_X$</pl-answer>
+                <pl-answer>$u_Y$</pl-answer>
+                <pl-answer>$\theta_Z$</pl-answer>
+                <pl-answer correct="true">$R_{FX}$</pl-answer>
+                <pl-answer correct="true">$R_{FY}$</pl-answer>
+                <pl-answer correct="true">$M_F$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan = 3>(b)</td>
+        <td colspan="3">List the <em>unknown</em> reactions at each of the following points.</td>
+    </tr>
+    <tr>
+        <td>Point B</td>
+        <td>Point E</td>
+        <td>Point F</td>
+    </tr>
+    <tr>
+        <td>
+            <pl-checkbox answers-name="unknownb" weight ="1" fixed-order="true">
+                <pl-answer>$R_{BX}$</pl-answer>
+                <pl-answer correct="true">$R_{BY}$</pl-answer>
+                <pl-answer>$M_B$</pl-answer>
+                <pl-answer>$NONE$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="unknowne" weight ="1" fixed-order="true">
+                <pl-answer correct="true">$R_{EX}$</pl-answer>
+                <pl-answer correct="true">$R_{EY}$</pl-answer>
+                <pl-answer>$M_E$</pl-answer>
+                <pl-answer>$NONE$</pl-answer>
+            </pl-checkbox>
+        </td>
+        <td>
+            <pl-checkbox answers-name="unknownf" weight ="1" fixed-order="true">
+                <pl-answer>$R_{FX}$</pl-answer>
+                <pl-answer>$R_{FY}$</pl-answer>
+                <pl-answer>$M_F$</pl-answer>
+                <pl-answer correct="true">$NONE$</pl-answer>
+            </pl-checkbox>
+        </td>
+    </tr>
+</table>

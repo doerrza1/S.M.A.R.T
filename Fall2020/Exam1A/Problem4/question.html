@@ -1,4 +1,4 @@
-<!-- Fall 2020 Exam 4A Problem 4 -->
+<!-- Fall 2020 Exam 1A Problem 4 -->
 
 <head>
     <style>
@@ -29,16 +29,20 @@
 
 <pl-question-panel>
     <h2>
-        The steel beam shown has a solid square cross section 2" x 2". At a temperature of 
-        72 degrees F the beam is stress free. When the temperature is increased to 160 degrees
-        F, calculate the stress $\sigma_x$. Use the material properties you can find on the formula 
-        sheet.
+        A 150 lb force is applied to the structure below. Find the moment about point E caused by this force.
+    </h2>
     
     <p></p>
-    <pl-figure file-name="IM4_2e_ss24_8216.png" directory="clientFilesQuestion"></pl-figure>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
     <p></p>
     
 </pl-question-panel>
 
-<pl-units-input correct-answer="{{correct_answers.sig}} {{correct_answers.units}}" answers-name="stress"
-    label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mez}} {{correct_answers.units}}" answers-name="moment"
+                label="$M_{EZ}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

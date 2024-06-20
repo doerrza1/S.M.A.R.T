@@ -1,0 +1,61 @@
+<!-- Fall 2020 Exam 1A Problem 5 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        An 800 lb force is applied as shown. Find the moment caused by the force about the origin, point C.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mi}} {{correct_answers.units}}" answers-name="momi"
+                label="$M_C$i&#770; =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mj}} {{correct_answers.units}}" answers-name="momj"
+                label="$M_C$j&#770; =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mk}} {{correct_answers.units}}" answers-name="momk"
+                label="$M_C$k&#770; =" placeholder="Include Units" atol="1 lb*in"></pl-units-input>
+        </td>
+    </tr>
+    
+</table>
