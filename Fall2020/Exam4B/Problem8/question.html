@@ -1,0 +1,65 @@
+<!-- Fall 2020 Exam 4B Problem 8 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The stepped bar below is fixed at point A and is initially free at point C. At point B, a thin, rigid, thermal 
+        insulator seperates bar 1 from bar 2. Bar 1 is made of steel, with cross-sectional area $A_1$ = 100 $mm^2$. 
+        Bar 3 is made of aluminum, with cross-sectional area $A_2$ = 60 $mm^2$. Two mechanical loads are applied at point B, 
+        and a thermal load $\Delta$T = 90 degrees C is <strong>applied to bar 2 only</strong>. After the loading is applied:
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Determine whether or not point C contacts the fixed wall to the right.</h4>
+    <h4>(b) Determine the axial stress in bar 1.</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-multiple-choice answers-name="touchy" weight="1" fixed-order="true">
+    
+                <pl-answer correct="true">Point C makes contact</pl-answer>
+                <pl-answer>Point C doesn't make contact</pl-answer>
+             
+            </pl-multiple-choice>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sig}} {{correct_answers.units}}" answers-name="stress"
+                label="$\sigma_{X1}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

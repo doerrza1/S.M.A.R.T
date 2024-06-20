@@ -1,0 +1,93 @@
+<!-- Fall 2020 Exam 2B Problem 8 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        For the loading shown:
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>(a) Determine the internal loads (forces and moments) at a section through k, located between sections C and D.</h4>
+    <h4>(b) Calculate the complete stress state (all 6 stress components) at point k, located at the top of the beam.</h4>
+
+    <h4>The beam CD has a solid circular cross section of diameter 10mm.</h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td rowspan="2">(a)</td>
+        <td>Forces</td>
+        <td>Moments</td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.fx}} {{correct_answers.unitsf}}" answers-name="forcex"
+                label="$f_x$ =" placeholder="Include Units" atol="1 N"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.fy}} {{correct_answers.unitsf}}" answers-name="forcey"
+                label="$f_y$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.fz}} {{correct_answers.unitsf}}" answers-name="forcez"
+                label="$f_z$ =" placeholder="Include Units" atol="1 N"></pl-units-input>
+        </td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mx}} {{correct_answers.unitsm}}" answers-name="momx"
+                label="$m_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.my}} {{correct_answers.unitsm}}" answers-name="momy"
+                label="$m_y$ =" placeholder="Include Units" atol="1 N*m"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.mz}} {{correct_answers.unitsm}}" answers-name="momz"
+                label="$m_z$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">(b)</td>
+        <td>Axial Stresses</td>
+        <td>Shear Stresses</td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sigx}} {{correct_answers.units}}" answers-name="axx"
+                label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sigy}} {{correct_answers.units}}" answers-name="axy"
+                label="$\sigma_y$ =" placeholder="Include Units" atol="1 MPa"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sigz}} {{correct_answers.units}}" answers-name="axz"
+                label="$\sigma_z$ =" placeholder="Include Units" atol="1 MPa"></pl-units-input>
+        </td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.units}}" answers-name="shx"
+                label="$\tau_{xy}$ =" placeholder="Include Units" atol="1 MPa"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.units}}" answers-name="shy"
+                label="$\tau_{xz}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.}} {{correct_answers.units}}" answers-name="shz"
+                label="$\tau_{yz}$ =" placeholder="Include Units" atol="1 MPa"></pl-units-input>
+        </td>
+    </tr>
+</table>

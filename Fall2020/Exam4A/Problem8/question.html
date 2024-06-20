@@ -1,0 +1,69 @@
+<!-- Fall 2020 Exam 4A Problem 8 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The aluminum rod (1) has a cross sectional area of 2,000 $mm^2$ and is connected to a rigid 
+        support at point A. The cupronickel rod (2) has a cross sectional area of 3,000 $mm^2$ and is 
+        connected to a rigid support at point C. Use the material properties you can find on the 
+        formula sheet.
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+    <h4>
+        (a) Determine the temperature increase that will close the initial 1mm gap between the 
+        two members.
+    </h4>
+
+    <h4>
+        (b) Compute the normal stress in each rod if the total temperature increase is 65 degrees C.
+    </h4>
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>(a)</td>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.t}}" answers-name="temp"
+                label="$T$ =" rtol="2e-2" placeholder="" suffix="C"></pl-number-input>
+        </td>
+    </tr>
+    <tr>
+        <td>(b)</td>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.sig1}} {{correct_answers.units}}" answers-name="stress1"
+                label="$\sigma_{x1}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+            <pl-units-input correct-answer="{{correct_answers.sig2}} {{correct_answers.units}}" answers-name="stress2"
+                label="$\sigma_{x2}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

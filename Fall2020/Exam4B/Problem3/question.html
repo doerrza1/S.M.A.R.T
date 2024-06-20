@@ -1,0 +1,58 @@
+<!-- Fall 2020 Exam 4B Problem 3 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        If gear B rotates counter-clockwise $\phi_B$ = 7 degrees, how far does gear A rotate and in what direction? 
+        Gear A has a diameter of 50 mm and gear B has a diameter of 130 mm. 
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-number-input correct-answer="{{correct_answers.phi}}" answers-name="angle"
+                label="$\phi_A$ =" rtol="2e-2" placeholder="" suffix="degrees"></pl-number-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-multiple-choice answers-name="direction" weight="1" fixed-order="true">
+    
+                <pl-answer correct="true">Clockwise</pl-answer>
+                <pl-answer>Counter-Clockwise</pl-answer>
+            </pl-multiple-choice>
+        </td>
+    </tr>
+</table>

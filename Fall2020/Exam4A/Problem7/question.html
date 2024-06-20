@@ -1,0 +1,57 @@
+<!-- Fall 2020 Exam 4A Problem 7 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        A torque T = 8 lb*in is applied to the rod ABC shown in the figure. The diameter of the beam 
+        is equal to 5". The rod is made of steel between A and B and of cupronickel between B and C 
+        (you can find the material properties on the formula sheet). Solve for the reactions at each wall 
+        (Points A and C).
+    </h2>
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<table>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.max}} {{correct_answers.units}}" answers-name="pointa"
+                label="$M_{AX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pl-units-input correct-answer="{{correct_answers.mac}} {{correct_answers.units}}" answers-name="pointc"
+                label="$M_{CX}$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
+        </td>
+    </tr>
+</table>

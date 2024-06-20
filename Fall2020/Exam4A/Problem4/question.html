@@ -1,0 +1,44 @@
+<!-- Fall 2020 Exam 4A Problem 4 -->
+
+<head>
+    <style>
+      h2 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      h4 {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+      }
+      table {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      td,
+      th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+</head>
+
+<pl-question-panel>
+    <h2>
+        The steel beam shown has a solid square cross section 2" x 2". At a temperature of 
+        72 degrees F the beam is stress free. When the temperature is increased to 160 degrees
+        F, calculate the stress $\sigma_x$. Use the material properties you can find on the formula 
+        sheet.
+    
+    <p></p>
+    <pl-figure file-name="" directory="clientFilesQuestion"></pl-figure>
+    <p></p>
+    
+</pl-question-panel>
+
+<pl-units-input correct-answer="{{correct_answers.sig}} {{correct_answers.units}}" answers-name="stress"
+    label="$\sigma_x$ =" placeholder="Include Units" rtol="2e-2"></pl-units-input>
